@@ -56,7 +56,7 @@
         <li><b>TWIST aisles</b>: same thing, plus a rule. Follow it!</li>
       </ul>
       <p>Obvious answers keep you near the <b>front window</b>. Rare-but-real answers send SKU's elevator <b>deeper</b>. Each aisle hides exactly one <b>100-point VAULT</b> answer.</p>
-      <p>Sub-brands, discontinued lines and licensed merch all count. Typos are forgiven. Too vague? You get to try again, but the clock keeps ticking.</p>
+      <p>Sub-brands, discontinued lines and licensed merch all count. Typos are forgiven. Wrong or too vague? Keep guessing until the clock runs out. No valid answer by then means 0.</p>
       <p>New aisles every day at <b>midnight Eastern</b>.</p>`;
   }
   function tierTableHTML() {
@@ -158,6 +158,7 @@
     A.sfx.open();
     // so refreshing can't cheat
     game.play.rounds[game.i] = { pending: true };
+    game.misses = [];
     store.save();
     startTimer();
   }
@@ -203,6 +204,15 @@
       input.select();
       return;
     }
+    if (res.status === 'none') {
+      // wrong answer: elevator jolts, keep guessing till time's up
+      game.misses.push(val);
+      toast('OUT OF STOCK · TRY AGAIN');
+      scene.miss();
+      input.classList.remove('shake'); void input.offsetWidth; input.classList.add('shake');
+      input.select();
+      return;
+    }
     finalize(res, val);
   }
 
@@ -213,7 +223,8 @@
     const ans = res && (res.status === 'match' || res.status === 'mega') ? res.answer : null;
     const rec = {
       input, pts: ans ? ans.pts : 0, name: ans ? ans.name : null, kind: ans ? ans.kind : '',
-      parent: ans ? ans.parent : '', note: ans ? ans.note : '', timeout, fuzzy: res && res.fuzzy ? res.fuzzy : ''
+      parent: ans ? ans.parent : '', note: ans ? ans.note : '', timeout, fuzzy: res && res.fuzzy ? res.fuzzy : '',
+      misses: game.misses.slice()
     };
     game.play.rounds[game.i] = rec;
     game.play.total = sumPts(game.play);
@@ -245,7 +256,8 @@
     const kindBadge = rec.kind && B.KINDS[rec.kind] ? `<span class="badge">${B.KINDS[rec.kind]}${rec.parent ? ' · ' + esc(rec.parent).toUpperCase() : ''}</span>` : '';
     const fuzzyNote = rec.fuzzy && rec.name ? `<div class="r-fuzzy">autocorrected from “${esc(rec.input)}”</div>` : '';
     let itemLine;
-    if (rec.timeout) itemLine = '<div class="r-item">— NO SALE —</div><div class="r-note">The store closed before you scanned anything.</div>';
+    const tried = rec.misses && rec.misses.length ? rec.misses.map(m => '“' + esc(m) + '”').join(', ') : '';
+    if (rec.timeout) itemLine = `<div class="r-item">— NO SALE —</div><div class="r-note">${tried ? 'None of these were in stock: ' + tried + '.' : 'The store closed before you scanned anything.'}</div>`;
     else if (!rec.name) itemLine = `<div class="r-item">NOT IN OUR CATALOG</div><div class="r-note">We don’t stock “${esc(rec.input)}” for this aisle.</div>`;
     else itemLine = `<div class="r-item">${esc(rec.name).toUpperCase()}</div>${fuzzyNote}<div>${kindBadge}</div>${rec.note ? `<div class="r-note">${esc(rec.note)}</div>` : ''}`;
     const also = B.deepCuts(r, 3, rec.name).map(a => `<b>${esc(a.name)}</b> ${a.pts}`).join(' · ');

@@ -710,6 +710,12 @@
       } };
     },
     nope() { st.headShake = 0.5; },
+    // wrong guess: jolt + sparks, but the round keeps going
+    miss() {
+      st.shake = 0.45; st.flicker = 0.5; st.headShake = 0.5; st.bounce = 0.8;
+      burst('spark', 16);
+      B.audio.sfx.fuse();
+    },
     hop() { st.hop = 1; }
   };
 
