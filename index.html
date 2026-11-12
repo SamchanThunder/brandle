@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Brandle · The Daily Markdown</title>
+  <meta name="description" content="A daily brand game. 7 aisles, 25 seconds each. The rarer your answer, the deeper the elevator goes.">
+  <meta name="theme-color" content="#120a26">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' shape-rendering='crispEdges'%3E%3Crect x='6' y='0' width='4' height='3' fill='%23ffd23f'/%3E%3Crect x='3' y='3' width='10' height='13' fill='%23ff4f8b'/%3E%3Crect x='7' y='5' width='2' height='2' fill='%231a1024'/%3E%3Crect x='4' y='11' width='8' height='3' fill='%23fff3dc'/%3E%3Crect x='5' y='11' width='1' height='3' fill='%231a1024'/%3E%3Crect x='7' y='11' width='1' height='3' fill='%231a1024'/%3E%3Crect x='9' y='11' width='1' height='3' fill='%231a1024'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="world" aria-hidden="true"></canvas>
+  <div id="crt" aria-hidden="true"></div>
+
+  <div id="app">
+    <!-- side buttons -->
+    <div id="sidebtns">
+      <button class="icon-btn" id="btn-mute" title="Sound on/off" aria-label="Toggle sound">🔊</button>
+      <button class="icon-btn" id="btn-muzak" title="Elevator music on/off" aria-label="Toggle elevator music">♪</button>
+      <button class="icon-btn" id="btn-help" title="How to play" aria-label="How to play">?</button>
+    </div>
+
+    <!-- HUD -->
+    <div id="hud" class="hidden">
+      <div class="hud-box" id="hud-floor">
+        <span class="lbl">FLOOR</span>
+        <span class="val" id="floor-val">G</span>
+        <div class="dial"><i id="dial-needle"></i></div>
+      </div>
+      <div id="tickets">
+        <div class="tickets-row" id="tickets-row"></div>
+        <span class="lbl" id="ticket-lbl">AISLE 1 OF 7</span>
+      </div>
+      <div class="hud-box right" id="hud-score">
+        <span class="lbl">REGISTER</span>
+        <span class="val pink" id="score-val">0</span>
+      </div>
+    </div>
+
+    <!-- TITLE -->
+    <section id="title-screen" class="screen">
+      <div class="title-wrap">
+        <h1 class="neon" id="logo" aria-label="Brandle"></h1>
+        <div class="subtitle">THE DAILY MARKDOWN</div>
+        <div class="tagline">7 aisles · 25 seconds each · rarer answers go deeper</div>
+      </div>
+      <div class="title-panel">
+        <details id="howto">
+          <summary>HOW TO SHOP</summary>
+          <div class="howto-body" id="howto-body"></div>
+        </details>
+        <button id="btn-start" class="call-plate"><span class="arrow">▼</span><span id="start-label">GOING DOWN</span><span class="arrow">▼</span></button>
+        <div class="title-meta">
+          <span id="meta-line">BRANDLE #1 · STREAK 0</span>
+          <span class="meta-btns">
+            <button class="chip" id="btn-archive">ARCHIVE ⟲</button>
+          </span>
+        </div>
+        <div class="countdown" id="title-countdown"></div>
+      </div>
+    </section>
+
+    <!-- ROUND -->
+    <section id="round-screen" class="screen hidden">
+      <div id="sign-wrap">
+        <div id="aisle-sign">
+          <div class="chains"><i></i><i></i></div>
+          <div class="sign-inner">
+            <div class="sign-top"><span id="sign-aisle">AISLE 1</span><span id="sign-type">BRAND → ITEM</span></div>
+            <div class="sign-ask" id="sign-ask">NAME SOMETHING THIS BRAND MAKES OR SELLS</div>
+            <div class="sign-main"><canvas id="sign-icon" width="18" height="18"></canvas><span id="sign-name">BRAND</span></div>
+            <div class="sign-twist hidden" id="sign-twist"></div>
+            <div class="sign-hint" id="sign-hint"></div>
+            <div class="sign-foot">▼ rarer answers go deeper ▼</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="reveal" class="hidden"></div>
+
+      <div id="answer-bar">
+        <div id="toast" class="hidden"></div>
+        <div class="answer-row">
+          <div id="deli" aria-label="seconds left"><span class="deli-lbl">NOW<br>SERVING</span><b id="timer">25</b></div>
+          <form id="answer-form" autocomplete="off">
+            <input id="answer" type="text" maxlength="40" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="type one answer…" aria-label="Your answer">
+            <button type="submit" id="btn-scan">SCAN</button>
+          </form>
+        </div>
+        <div id="timebar"><i id="timebar-fill"></i></div>
+      </div>
+    </section>
+
+    <!-- RESULTS -->
+    <section id="results" class="screen hidden"></section>
+
+    <!-- MODAL -->
+    <div id="modal" class="hidden" role="dialog" aria-modal="true">
+      <div class="modal-card">
+        <button class="modal-x" id="modal-x" aria-label="Close">✕</button>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <div id="global-toast" class="hidden"></div>
+  </div>
+
+  <script src="data/puzzles-01.js"></script>
+  <script src="data/puzzles-02.js"></script>
+  <script src="data/puzzles-03.js"></script>
+  <script src="data/puzzles-04.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/scene.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
