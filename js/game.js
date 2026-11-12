@@ -551,6 +551,28 @@
       if (e.key === 'Enter' && game && game.phase === 'receipt') { e.preventDefault(); next(); }
     });
     setInterval(updateCountdown, 1000);
+
+    // phone keyboard: keep the sign + input in the part of the screen you can see
+    const fit = () => {
+      const vv = window.visualViewport;
+      if (!vv) return;
+      document.documentElement.style.setProperty('--vvh', vv.height + 'px');
+      document.documentElement.style.setProperty('--vvtop', vv.offsetTop + 'px');
+    };
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener('resize', fit);
+      window.visualViewport.addEventListener('scroll', fit);
+      fit();
+    }
+    const touch = window.matchMedia('(pointer: coarse)').matches;
+    $('#answer').addEventListener('focus', () => {
+      if (touch) document.body.classList.add('typing');
+      fit(); setTimeout(fit, 350);
+    });
+    $('#answer').addEventListener('blur', () => {
+      document.body.classList.remove('typing');
+      setTimeout(fit, 350);
+    });
   }
   init();
 })();

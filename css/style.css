@@ -32,7 +32,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
     repeating-linear-gradient(to bottom, rgba(0,0,0,0.10) 0 1px, transparent 1px 3px),
     radial-gradient(ellipse at center, transparent 55%, rgba(5,2,10,0.55) 100%);
 }
-#app { position: fixed; inset: 0; z-index: 10; }
+/* follows the visible area so the phone keyboard doesn't cover stuff */
+#app { position: fixed; left: 0; right: 0; top: var(--vvtop, 0px); height: var(--vvh, 100%); z-index: 10; }
 .screen { position: absolute; inset: 0; }
 
 /* pixel-notched panels */
@@ -398,4 +399,21 @@ button { font: inherit; color: inherit; cursor: pointer; }
   #app:has(#hud:not(.hidden)) #sidebtns { top: 70px; }
   #app:has(#hud:not(.hidden)) .icon-btn { width: 30px; height: 30px; font-size: 12px; }
   #sign-wrap { top: 118px; }
+}
+
+/* phones while the keyboard is up: shrink the sign so the question + input both fit */
+@media (max-width: 640px) {
+  body.typing #hud, body.typing #sidebtns, body.typing .chains, body.typing .sign-foot { display: none; }
+  body.typing #sign-wrap { top: 8px; }
+  body.typing #aisle-sign.drop { animation: none; }
+  body.typing .sign-top { margin-top: 6px; padding: 4px 12px; font-size: 10px; }
+  body.typing .sign-ask { font-size: 15px; padding-top: 8px; }
+  body.typing .sign-main { padding-top: 4px; gap: 10px; }
+  body.typing .sign-main canvas { width: 36px; height: 36px; }
+  body.typing #sign-name { font-size: 32px; }
+  body.typing .sign-hint { font-size: 17px; padding-top: 2px; }
+  body.typing .sign-twist { font-size: 12px; margin-top: 4px; }
+  body.typing .sign-inner { padding-bottom: 10px; }
+  body.typing .sign-inner::before { display: none; }
+  body.typing #answer-bar { bottom: 8px; }
 }
