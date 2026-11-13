@@ -583,6 +583,12 @@
     });
     setInterval(updateCountdown, 1000);
 
+    // tell the scene where the tagline ends so the store sign never sits behind it
+    const clearTitle = () => scene.setTitleClear(document.querySelector('.tagline').getBoundingClientRect().bottom + 6);
+    clearTitle();
+    if (document.fonts) document.fonts.ready.then(clearTitle);
+    window.addEventListener('resize', clearTitle);
+
     // phone keyboard: keep the sign + input in the part of the screen you can see
     const fit = () => {
       const vv = window.visualViewport;

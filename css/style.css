@@ -66,7 +66,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
   44% { opacity: 0.3; text-shadow: none; } 46% { opacity: 1; } 80% { opacity: 1; } 81% { opacity: 0.35; text-shadow: none; } 82% { opacity: 1; }
 }
 .subtitle { font-family: var(--px); font-weight: 700; color: var(--mint); letter-spacing: 0.5em; font-size: clamp(14px, 2.2vw, 28px); margin-top: 18px; text-shadow: 0 0 10px rgba(61,255,197,0.55), 2px 2px 0 #1a1024; padding-left: 0.5em; }
-.tagline { color: #ffe0ea; letter-spacing: 0.12em; font-size: clamp(16px, 1.8vw, 24px); margin-top: 12px; text-shadow: 2px 2px 0 rgba(26,16,36,0.8); }
+.tagline { color: #fff3dc; letter-spacing: 0.12em; font-size: clamp(16px, 1.8vw, 24px); margin-top: 12px; text-shadow: 2px 2px 0 #1a1024, -1px -1px 0 #1a1024, 1px -1px 0 #1a1024, -1px 1px 0 #1a1024, 0 0 10px rgba(26,16,36,0.95), 0 0 18px rgba(26,16,36,0.8); }
 
 .title-panel {
   position: absolute; left: 50%; transform: translateX(-50%); bottom: max(3vh, 16px);

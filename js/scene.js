@@ -11,7 +11,7 @@
   let W = 320, H = 200, S = 3;
   const st = {
     t: 0, last: 0, camY: -140, mode: 'title', depth: 0, anim: null, bounce: 0, bounceOff: 0, shake: 0,
-    flash: 0, flashCol: '255,210,63', flicker: 0, parts: [], hop: 0, headShake: 0, vel: 0, onFrame: null
+    titleClear: 0, flash: 0, flashCol: '255,210,63', flicker: 0, parts: [], hop: 0, headShake: 0, vel: 0, onFrame: null
   };
 
   // helpers
@@ -180,7 +180,8 @@
   // camera
   const cabBottom = () => st.depth * PX_PT - 3;
   function camTarget() {
-    if (st.mode === 'title') return -Math.round(H * 0.64);
+    // title: keep the store's roof sign below the tagline text
+    if (st.mode === 'title') return -Math.round(Math.max(H * 0.64, st.titleClear / S + L.storeH + 20));
     if (st.mode === 'results') return cabBottom() - Math.round(H * 0.42);
     return cabBottom() - Math.round(H * 0.52);
   }
@@ -710,6 +711,7 @@
       } };
     },
     nope() { st.headShake = 0.5; },
+    setTitleClear(px) { st.titleClear = px; },
     // wrong guess: jolt + sparks, but the round keeps going
     miss() {
       st.shake = 0.45; st.flicker = 0.5; st.headShake = 0.5; st.bounce = 0.8;
