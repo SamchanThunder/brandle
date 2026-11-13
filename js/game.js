@@ -60,9 +60,10 @@
       <p>New aisles every day at <b>midnight Eastern</b>.</p>`;
   }
   function tierTableHTML() {
-    const rows = [['100', 'THE VAULT', 'the one rarest answer'], ['80-95', 'ARCHIVE PULL', 'deep cut'], ['60-75', 'STOCKROOM FIND', 'impressive'],
-      ['40-55', 'CLEARANCE RACK', 'nice'], ['20-35', 'MAIN AISLE', 'solid'], ['10-15', 'FRONT WINDOW', 'the obvious one'],
-      ['5', 'IMPULSE BUY', 'parent companies, mega-retailers, famous gotchas'], ['0', 'OUT OF STOCK', 'not in our catalog / time ran out']];
+    const rows = [['100', 'THE VAULT', 'the one rarest answer'], ['85', 'ARCHIVE PULL', 'deep cut, real category nerd stuff'],
+      ['60', 'STOCKROOM FIND', 'rare, most people won’t think of it'], ['30', 'MAIN AISLE', 'solid, one step past the obvious'],
+      ['15', 'IMPULSE BUY', 'parent companies, mega-retailers, famous gotchas'], ['10', 'FRONT WINDOW', 'the obvious one'],
+      ['0', 'OUT OF STOCK', 'not in our catalog / time ran out']];
     return '<table class="tier-table">' + rows.map(r => `<tr><td>${r[0]}</td><td><b style="font-family:var(--px);font-size:13px">${r[1]}</b> · ${r[2]}</td></tr>`).join('') + '</table>';
   }
   function renderTitle() {
@@ -159,6 +160,7 @@
     // so refreshing can't cheat
     game.play.rounds[game.i] = { pending: true };
     game.misses = [];
+    clearConfirm();
     store.save();
     startTimer();
   }
@@ -177,7 +179,7 @@
       $('#deli').classList.toggle('low', low); $('#timebar').classList.toggle('low', low);
       if (low && secs < game.lastTick && secs > 0) A.sfx.tick();
       game.lastTick = secs;
-      if (left <= 0) { finalize(null, ''); return; }
+      if (left <= 0) { timeUp(); return; }
       game.timerRaf = requestAnimationFrame(loop);
     };
     loop();
@@ -202,8 +204,12 @@
     if (!game || game.locked || game.phase !== 'round') return;
     const input = $('#answer'), val = input.value.trim();
     if (!val) return;
+    // second enter on an autocorrect = locked in
+    const cf = game.confirm;
+    if (cf && val === cf.to) { finalize(cf.res, cf.from); return; }
     const r = game.puzzle.rounds[game.i];
     const res = B.judge(r, val);
+    if (res.status === 'match' && ASK_FIRST.has(res.fuzzy)) { askConfirm(val, res); return; }
     if (res.status === 'retry' || res.status === 'empty') {
       const msg = res.reason === 'vague' ? 'TOO VAGUE · BE MORE SPECIFIC'
         : res.reason === 'excluded' ? 'NOPE · ' + (r.twist || 'BREAKS THE RULE').toUpperCase()
@@ -225,7 +231,39 @@
     finalize(res, val);
   }
 
+  // autocorrects we double check before scanning ("maroo" -> super mario odyssey?)
+  const ASK_FIRST = new Set(['typo', 'sound', 'prefix', 'word']);
+  function askConfirm(from, res) {
+    game.confirm = { from, to: res.answer.name, res };
+    const input = $('#answer');
+    input.value = res.answer.name;
+    input.setSelectionRange(input.value.length, input.value.length);
+    const box = $('#confirm');
+    box.innerHTML = `<div class="cf-line"><span class="cf-from">“${esc(from)}”</span> → <span class="cf-to">“${esc(res.answer.name)}”</span></div><div class="cf-sub">enter again to confirm · or edit</div>`;
+    box.classList.add('on');
+    A.sfx.key();
+  }
+  function clearConfirm() {
+    game && (game.confirm = null);
+    $('#confirm').classList.remove('on');
+  }
+
+  // time's up: whatever's sitting in the box still counts if it's a real answer
+  function timeUp() {
+    const val = $('#answer').value.trim(), cf = game.confirm;
+    if (cf && val === cf.to) return finalize(cf.res, cf.from);
+    if (val) {
+      const res = B.judge(game.puzzle.rounds[game.i], val);
+      // no time to confirm, so skip the loosest guesses (sounds-like / one-word hits)
+      const loose = res.fuzzy === 'sound' || res.fuzzy === 'word';
+      if ((res.status === 'match' && !loose) || res.status === 'mega') return finalize(res, val);
+      game.misses.push(val);
+    }
+    finalize(null, '');
+  }
+
   function finalize(res, input) {
+    clearConfirm();
     game.locked = true; game.phase = 'reveal';
     cancelAnimationFrame(game.timerRaf);
     const timeout = !res;
@@ -321,10 +359,11 @@
   }
 
   // results
-  // the log isn't linear: rare answers sink way down, only a vault answer hits the bottom strip
+  // rare answers sink further, only a vault answer hits the bottom strip
   const LOG_LEFT = 24, LOG_CW = 32, LOG_TOP = 14, LOG_H = 100, VAULT_H = 8;
   // each tier gets a band, and every band is a bit thinner than the one above it
-  const LOG_TIERS = [[0, 26, '#4a3d6e'], [10, 22, '#3d3262'], [20, 18, '#322855'], [40, 14, '#271f47'], [60, 11, '#1d1739'], [80, 9, '#14102b']];
+  // 20 pts per band, each band a little shorter than the last (gentle squish, not a log)
+  const LOG_TIERS = [[0, 24, '#4a3d6e'], [20, 22, '#3a3062'], [40, 20, '#2c2453'], [60, 18, '#201a42'], [80, 16, '#16112f']];
   function logDepth(pts) {
     if (pts >= 100) return LOG_H + VAULT_H / 2 + 1;
     let y = 0;
@@ -352,12 +391,18 @@
     // labels
     const FONT = {
       G: '011100101101011', R: '110101110101101', A: '010101111101101', E: '111100110100111',
-      V: '101101101101010', U: '101101101101111', L: '100100100100111', T: '111010010010010'
+      V: '101101101101010', U: '101101101101111', L: '100100100100111', T: '111010010010010',
+      0: '111101101101111', 1: '010110010010111', 2: '111001111100111', 3: '111001111001111', 4: '101101111001001',
+      5: '111100111001111', 6: '111100111101111', 7: '111001001001001', 8: '111101111101111', 9: '111101111001111'
     };
     const txt = (s, x, y, col) => { c.fillStyle = col; let cx = x; for (const ch of s) { const g = FONT[ch]; if (g) for (let i = 0; i < 15; i++) if (g[i] === '1') c.fillRect(cx + i % 3, y + (i / 3 | 0), 1, 1); cx += 4; } };
-    txt('G', 3, top - 7, '#cfc6e6');
-    txt('RARE', 3, top + logDepth(60) + 3, '#7fe8c8');
-    txt('VAULT', 2, top + LOG_H + 4, '#ffd23f');
+    // point marks down the left side, every 20 (spacing shrinks since the log squishes)
+    for (let n = 0; n < 100; n += 20) {
+      const ly = top + Math.round(logDepth(n)), s = String(n);
+      R(left - 3, ly, 3, 1, 'rgba(207,198,230,0.6)');
+      txt(s, left - 5 - (s.length * 4 - 1), Math.max(ly - 2, top + 1), '#cfc6e6');
+    }
+    txt('100', left - 5 - 11, top + LOG_H + 4, '#ffd23f');
     for (let i = 0; i < cols; i++) {
       const r = play.rounds[i];
       const cx = left + i * cw + cw / 2;
@@ -424,9 +469,8 @@
       <div class="res-panel">
         <div class="res-title"><b>BRANDLE #${num}</b> · ${B.dateLabel(num).toUpperCase()} · ${play.daily ? 'CHECKED OUT' : 'ARCHIVE RUN'}</div>
         <div class="res-score">
-          <div class="res-score-num"><span class="n">${total}</span><span class="of">/700</span></div>
+          <div class="res-score-num"><span class="n">${total}</span></div>
           <div class="res-score-lbl">POINTS</div>
-          <div class="res-meter"><i style="width:${Math.min(100, total / 7)}%"></i></div>
           <div class="res-floorline"><b>${B.floorLabel(total)}</b> · ${floors} FLOORS DOWN · <span>${B.zoneName(floors)}</span></div>
         </div>
         <div>
@@ -503,7 +547,7 @@
     const play = playOf(num), total = play.total;
     const emojis = play.rounds.map(r => B.tierFor(r.pts, r.timeout).emoji).join('');
     const url = location.href.split(/[?#]/)[0];
-    const txt = `BRANDLE #${num} · ${B.floorLabel(total)} 🛗\n${emojis}\n${total}/700 pts\n${url}`;
+    const txt = `BRANDLE #${num} · ${B.floorLabel(total)} 🛗\n${emojis}\n${total} pts\n${url}`;
     const coarse = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
     if (navigator.share && coarse) { navigator.share({ text: txt }).catch(() => copy(txt)); return; }
     copy(txt);
@@ -566,7 +610,11 @@
       if (p && p.done) { A.unlock(); showResults(todayNum); } else start(todayNum);
     });
     $('#answer-form').addEventListener('submit', submit);
-    $('#answer').addEventListener('input', () => A.sfx.key());
+    $('#answer').addEventListener('input', () => {
+      A.sfx.key();
+      // they're editing the autocorrect, so drop it
+      if (game && game.confirm && $('#answer').value.trim() !== game.confirm.to) clearConfirm();
+    });
     $('#btn-archive').addEventListener('click', () => { A.unlock(); openArchive(); });
     $('#btn-help').addEventListener('click', openHelp);
     $('#modal-x').addEventListener('click', closeModal);

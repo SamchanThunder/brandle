@@ -194,6 +194,18 @@ button { font: inherit; color: inherit; cursor: pointer; }
   transition: opacity 0.15s, transform 0.2s cubic-bezier(.3,1.6,.5,1), visibility 0s 0.15s;
 }
 #toast.on { opacity: 1; visibility: visible; transform: translateX(-50%) scale(1); transition: opacity 0.1s, transform 0.2s cubic-bezier(.3,1.6,.5,1); }
+/* "did you mean" box for autocorrects */
+#confirm {
+  position: absolute; left: 50%; bottom: calc(100% + 12px); transform: translateX(-50%); max-width: 100%; width: max-content;
+  background: #120a26; border: 3px solid var(--edge); box-shadow: 4px 4px 0 #000; padding: 10px 18px; text-align: center; z-index: 4;
+  opacity: 0; visibility: hidden; pointer-events: none;
+}
+#confirm.on { opacity: 1; visibility: visible; }
+#confirm .cf-line { font-family: var(--px); font-weight: 700; font-size: clamp(14px, 2vw, 18px); color: #fff3dc; letter-spacing: 0.04em; }
+#confirm .cf-from { color: var(--muted); }
+#confirm .cf-to { color: var(--mint); }
+#confirm .cf-sub { font-size: 16px; color: var(--muted); margin-top: 4px; letter-spacing: 0.06em; }
+body.typing #confirm { bottom: calc(100% + 6px); padding: 6px 12px; }
 /* big red stamp that slams onto the sign on a wrong answer */
 #sign-stamp {
   position: absolute; left: 50%; top: 50%; pointer-events: none; white-space: nowrap;

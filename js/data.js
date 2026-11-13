@@ -15,14 +15,15 @@
 
   B.TIERS = [
     { min: 100, key: 'vault',   name: 'THE VAULT',      emoji: '🔐' },
-    { min: 80,  key: 'archive', name: 'ARCHIVE PULL',   emoji: '🗄️' },
+    { min: 85,  key: 'archive', name: 'ARCHIVE PULL',   emoji: '🗄️' },
     { min: 60,  key: 'stock',   name: 'STOCKROOM FIND', emoji: '📦' },
-    { min: 40,  key: 'clear',   name: 'CLEARANCE RACK', emoji: '🏷️' },
-    { min: 20,  key: 'aisle',   name: 'MAIN AISLE',     emoji: '🛒' },
+    { min: 30,  key: 'aisle',   name: 'MAIN AISLE',     emoji: '🛒' },
+    { min: 15,  key: 'impulse', name: 'IMPULSE BUY',    emoji: '💸' },
     { min: 10,  key: 'window',  name: 'FRONT WINDOW',   emoji: '🪟' },
-    { min: 5,   key: 'impulse', name: 'IMPULSE BUY',    emoji: '💸' },
     { min: 0,   key: 'oos',     name: 'OUT OF STOCK',   emoji: '❌' }
   ];
+  // krillion-style: every answer is worth one of these
+  B.POINTS = [10, 15, 30, 60, 85, 100];
   B.tierFor = function (pts, timeout) {
     if (timeout) return { min: 0, key: 'oos', name: 'STORE CLOSED', emoji: '❌' };
     return B.TIERS.find(t => pts >= t.min);
@@ -95,8 +96,48 @@
   B.loadPuzzles = function (src) {
     const text = src != null ? src : (root.BRANDLE_SRC || []).join('\n');
     B.puzzles = parse(text).sort((a, b) => a.num - b.num);
+    if (src == null && root.BRANDLE_MORE) mergeMore(B.puzzles, root.BRANDLE_MORE.join('\n'));
     return B.puzzles;
   };
+
+  // data/more-*.js: extra answers bolted onto existing rounds
+  //   @ 2 | Pizza      <- day number + round name
+  //   60 Pequod's = pequods
+  // anything that clashes with what the round already has just gets skipped
+  function mergeMore(days, text) {
+    let round = null;
+    text.split(/\r?\n/).forEach(raw => {
+      const line = raw.trim();
+      if (!line || line.startsWith('//')) return;
+      if (line.startsWith('@ ')) {
+        const [d, name] = line.slice(2).split('|').map(s => s.trim());
+        const day = days.find(x => x.num === +d);
+        round = day && day.rounds.find(r => r.name.toLowerCase() === name.toLowerCase());
+        if (!round && root.console) console.warn('[brandle] no round for ' + line);
+        if (round && !round._taken) {
+          round._taken = new Set();
+          const take = s => keysOf(s).forEach(k => round._taken.add(k));
+          take(round.name);
+          round.answers.forEach(a => { take(a.name); a.aliases.forEach(take); });
+          round.vague.forEach(take); round.excluded.forEach(take);
+        }
+        return;
+      }
+      const m = line.match(/^(\d+)\s+(.+)$/);
+      if (!m || !round) return;
+      const a = parseAnswer(parseInt(m[1], 10), m[2]);
+      if (a.pts >= 100) a.pts = 85; // only one vault per round
+      const hit = s => [...keysOf(s)].some(k => round._taken.has(k));
+      if (hit(a.name)) return;
+      // "pearl masters" when pearl's already there is a product line, not a brand
+      const aw = words(a.name).join(' ');
+      if (round.answers.some(o => { const ow = words(o.name).join(' '); return ow.length >= 3 && aw.startsWith(ow + ' '); })) return;
+      a.aliases = a.aliases.filter(x => !hit(x));
+      [a.name, ...a.aliases].forEach(s => keysOf(s).forEach(k => round._taken.add(k)));
+      round.answers.push(a);
+    });
+    days.forEach(d => d.rounds.forEach(r => { delete r._taken; }));
+  }
 
   // new puzzle at midnight eastern
   function nyParts(d) {
@@ -404,7 +445,7 @@
     if (r) return r;
     if (round.type === 'item') {
       for (const m of MEGA) if (keysOf(m).has(main)) {
-        return { status: 'mega', answer: { name: m, pts: 5, kind: 'clever', aliases: [], note: 'Sells everything. Nice try.' } };
+        return { status: 'mega', answer: { name: m, pts: 15, kind: 'clever', aliases: [], note: 'Sells everything. Nice try.' } };
       }
     }
     return { status: 'none' };

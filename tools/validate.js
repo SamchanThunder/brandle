@@ -6,7 +6,7 @@ const dataDir = path.join(__dirname, '..', 'data');
 let warnings = [];
 const origWarn = console.warn;
 console.warn = (...a) => warnings.push(a.join(' '));
-fs.readdirSync(dataDir).filter(f => /^puzzles-\d+\.js$/.test(f)).sort().forEach(f => require(path.join(dataDir, f)));
+fs.readdirSync(dataDir).filter(f => /^(puzzles|more)-\d+\.js$/.test(f)).sort().forEach(f => require(path.join(dataDir, f)));
 const B = require('../js/data.js');
 const days = B.loadPuzzles();
 console.warn = origWarn;
@@ -24,7 +24,7 @@ days.forEach((d, i) => {
     vaults.forEach(v => { if (!v.fact) err(d, r, `vault "${v.name}" has no fact`); });
     if (r.answers.length < 10) err(d, r, `only ${r.answers.length} answers`);
     r.answers.forEach(a => {
-      if (a.pts % 5 || a.pts < 5 || a.pts > 100) err(d, r, `odd points ${a.pts} for ${a.name}`);
+      if (!B.POINTS.includes(a.pts)) err(d, r, `odd points ${a.pts} for ${a.name}`);
       if (a.kind && !B.KINDS[a.kind]) err(d, r, `unknown kind "${a.kind}" on ${a.name}`);
     });
     const owner = new Map();
