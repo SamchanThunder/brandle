@@ -21,7 +21,7 @@ V drinks, drink, beverages, beverage, liquid, food, stuff, things, products
 55 Alcohol = hard seltzer, topo chico hard seltzer, jack and coke, cocktails, canned cocktails, lemon dou, alcoholic drinks, booze | Jack & Coke cans, Topo Chico hard seltzer
 60 Lip Balm (lic) = lip smacker, chapstick, lip gloss
 90 Wine (disc) | Owned the Taylor Wine Company 1977–1983
-100 Movies (disc) = movie, films, film, columbia pictures, hollywood movies | Coca-Cola owned Columbia Pictures from 1982 to 1989. Ghostbusters (1984) was technically a Coke product.
+100 Movies (disc) = movie, films, film, columbia, columbia pictures, hollywood movies | Coca-Cola owned Columbia Pictures from 1982 to 1989. Ghostbusters (1984) was technically a Coke product.
 5 Cocaine (clever) = coke the drug, coca leaves | The early-1900s recipe joke. Everyone tries it.
 
 I Sneakers | 👟

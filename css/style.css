@@ -189,9 +189,20 @@ button { font: inherit; color: inherit; cursor: pointer; }
 #toast {
   position: absolute; left: 50%; bottom: calc(100% + 12px); transform: translateX(-50%); white-space: nowrap;
   background: var(--gold); color: #1a1024; font-family: var(--px); font-weight: 700; letter-spacing: 0.12em; font-size: 15px; padding: 8px 14px;
-  box-shadow: 4px 4px 0 #000; animation: pop 0.25s;
+  box-shadow: 4px 4px 0 #000; z-index: 5; pointer-events: none;
+  opacity: 0; visibility: hidden; transform: translateX(-50%) scale(0.7);
+  transition: opacity 0.15s, transform 0.2s cubic-bezier(.3,1.6,.5,1), visibility 0s 0.15s;
 }
-@keyframes pop { from { transform: translateX(-50%) scale(0.6); } }
+#toast.on { opacity: 1; visibility: visible; transform: translateX(-50%) scale(1); transition: opacity 0.1s, transform 0.2s cubic-bezier(.3,1.6,.5,1); }
+/* big red stamp that slams onto the sign on a wrong answer */
+#sign-stamp {
+  position: absolute; left: 50%; top: 50%; pointer-events: none; white-space: nowrap;
+  font-family: var(--px); font-weight: 700; font-size: clamp(22px, 5vw, 44px); letter-spacing: 0.08em; color: var(--red);
+  border: 5px solid currentColor; padding: 4px 14px; background: rgba(26,16,36,0.85);
+  opacity: 0; transform: translate(-50%, -50%) rotate(-8deg) scale(1.8);
+  transition: opacity 0.25s, transform 0.25s;
+}
+#sign-stamp.on { opacity: 1; transform: translate(-50%, -50%) rotate(-8deg) scale(1); transition: opacity 0.08s, transform 0.18s cubic-bezier(.3,1.6,.5,1); }
 
 /* receipt reveal */
 #reveal { position: absolute; inset: 0; display: flex; justify-content: center; align-items: flex-start; padding: clamp(88px, 13vh, 150px) 16px 16px; overflow-y: auto; }
@@ -253,10 +264,10 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .sec-lbl small { color: var(--muted); font-size: 11px; margin-left: 8px; }
 .log-wrap { position: relative; background: #0d0817; border: 2px solid var(--edge); }
 #log-canvas { display: block; width: 100%; image-rendering: pixelated; }
-.log-cols { position: absolute; inset: 0 0 0 7.44%; display: grid; grid-template-columns: repeat(7, 1fr); }
+.log-cols { position: absolute; inset: 0 0 0 9.68%; display: grid; grid-template-columns: repeat(7, 1fr); }
 .log-cols button { background: transparent; border: 0; padding: 0; }
 .log-cols button:hover, .log-cols button.sel { background: rgba(255,255,255,0.06); outline: 2px solid rgba(61,255,197,0.5); outline-offset: -2px; }
-.log-names { display: grid; grid-template-columns: 7.44% repeat(7, 1fr); font-family: var(--px); font-size: 9px; letter-spacing: 0.05em; color: var(--muted); text-align: center; margin-top: 6px; }
+.log-names { display: grid; grid-template-columns: 9.68% repeat(7, 1fr); font-family: var(--px); font-size: 9px; letter-spacing: 0.05em; color: var(--muted); text-align: center; margin-top: 6px; }
 .log-names span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 0 2px; }
 
 .receipt.long { transform: none; width: 100%; animation: none; }
@@ -416,4 +427,28 @@ button { font: inherit; color: inherit; cursor: pointer; }
   body.typing .sign-inner { padding-bottom: 10px; }
   body.typing .sign-inner::before { display: none; }
   body.typing #answer-bar { bottom: 8px; }
+}
+
+/* keep stuff clear of notches + safari's bars */
+#sidebtns { top: calc(14px + env(safe-area-inset-top)); right: calc(14px + env(safe-area-inset-right)); }
+#hud { top: calc(12px + env(safe-area-inset-top)); }
+#results { padding-top: calc(18px + env(safe-area-inset-top)); padding-bottom: calc(40px + env(safe-area-inset-bottom)); }
+#reveal { padding-bottom: calc(16px + env(safe-area-inset-bottom)); }
+#global-toast { top: calc(22px + env(safe-area-inset-top)); }
+
+/* popups fit inside what you can actually see, and the X sticks to the top */
+#modal { place-items: start center; padding: calc(12px + env(safe-area-inset-top)) 12px calc(12px + env(safe-area-inset-bottom)); overflow: hidden; }
+.modal-card { max-height: 100%; padding-top: 0; margin: auto 0; }
+.modal-x {
+  position: sticky; top: 0; float: right; z-index: 3; margin: 0 -12px 0 8px;
+  width: 44px; height: 44px; background: #170f29; border: 2px solid var(--mint); color: var(--mint); font-size: 20px;
+}
+.modal-card h2 { padding-top: 18px; }
+@media (max-width: 640px) {
+  #sidebtns { top: calc(8px + env(safe-area-inset-top)); right: calc(8px + env(safe-area-inset-right)); }
+  #hud { top: calc(8px + env(safe-area-inset-top)); }
+  #app:has(#hud:not(.hidden)) #sidebtns { top: calc(70px + env(safe-area-inset-top)); }
+  #sign-wrap { top: calc(118px + env(safe-area-inset-top)); }
+  body.typing #sign-wrap { top: calc(8px + env(safe-area-inset-top)); }
+  .modal-card { padding: 0 16px 16px; }
 }

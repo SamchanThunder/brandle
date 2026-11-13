@@ -135,14 +135,24 @@
       .replace(/[&+]/g, ' and ').replace(/['’`´]/g, '').replace(/[^a-z0-9]+/g, ' ')
       .trim().split(' ').filter(Boolean);
   }
+  // batteries -> battery, knives -> knife, boxes -> box, mowers -> mower
+  function singular(w) {
+    if (w.length <= 3 || w.endsWith('ss') || w.endsWith('us') || w.endsWith('is')) return w;
+    if (w.endsWith('ies') && w.length > 4) return w.slice(0, -3) + 'y';
+    if (w.endsWith('ves') && w.length > 4) return w.slice(0, -3) + 'f';
+    if (/(ses|xes|zes|ches|shes)$/.test(w)) return w.slice(0, -2);
+    if (w.endsWith('s')) return w.slice(0, -1);
+    return w;
+  }
   // first key is the main one
   function variants(ws) {
     const out = new Set();
     ws = ws.slice();
     if (ws.length > 1 && ws[0] === 'the') ws = ws.slice(1);
     while (ws.length > 1 && SUFFIX.has(ws[ws.length - 1])) ws = ws.slice(0, -1);
-    const a = ws.join(''), b = ws.filter(x => x !== 'and').join('');
-    for (const k of [a, b]) {
+    const sing = ws.map(singular);
+    const forms = [ws.join(''), ws.filter(x => x !== 'and').join(''), sing.join(''), sing.filter(x => x !== 'and').join('')];
+    for (const k of forms) {
       if (!k) continue;
       out.add(k);
       if (k.length > 4 && k.endsWith('es')) out.add(k.slice(0, -2));
@@ -150,6 +160,11 @@
     }
     return out;
   }
+  const GLUE = new Set(['and', 'the', 'of', 'a', 'an', 'by', 'for', 'co', 'inc', 'brand', 'company']);
+  // words that don't tell us anything
+  const STOP = new Set(['and', 'the', 'of', 'for', 'with', 'by', 'a', 'an', 'in', 'on', 'at', 'to', 'from', 'it', 'its',
+    'made', 'make', 'makes', 'brand', 'brands', 'company', 'product', 'products', 'stuff', 'thing', 'things', 'line',
+    'kind', 'type', 'my', 'their', 'they', 'sell', 'sells', 'some', 'like', 'also', 'that', 'this', 'is', 'are', 'co', 'inc']);
   function keysOf(s) { return variants(words(s)); }
   B.keysOf = keysOf;
 
@@ -164,6 +179,7 @@
     if ('aeiouy'.includes(a) && 'aeiouy'.includes(b)) return 0.7;                         // vowel swap
     return 1;
   }
+  const VOWEL = 'aeiou';
   function dl(a, b, max) {
     const m = a.length, n = b.length;
     if (Math.abs(m - n) > max + 1) return max + 1;
@@ -174,8 +190,8 @@
       let rowMin = i;
       for (let j = 1; j <= n; j++) {
         // doubled letters are an easy mistake
-        const del = prev[j] + (i > 1 && a[i - 1] === a[i - 2] ? 0.5 : 1);
-        const ins = cur[j - 1] + (j > 1 && b[j - 1] === b[j - 2] ? 0.5 : 1);
+        const del = prev[j] + (i > 1 && a[i - 1] === a[i - 2] ? 0.5 : VOWEL.includes(a[i - 1]) ? 0.7 : 1);
+        const ins = cur[j - 1] + (j > 1 && b[j - 1] === b[j - 2] ? 0.5 : VOWEL.includes(b[j - 1]) ? 0.7 : 1);
         let v = Math.min(del, ins, prev[j - 1] + subCost(a[i - 1], b[j - 1]));
         if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) v = Math.min(v, prev2[j - 2] + 0.6);
         cur[j] = v;
@@ -236,6 +252,26 @@
     round._excl.forEach(k => { if (!idx.has(k)) cand.push([k, 'x']); });
     round._vague.forEach(k => { if (!idx.has(k)) cand.push([k, 'v']); });
     round._cand = cand.map(([k, t]) => ({ k, t, ph: phonetic(k) }));
+    // word-level stuff: whole phrases + single standout words
+    const nameSet = new Set(round.type === 'brand' ? round._nameWords.map(singular) : []);
+    const clean = s => words(s).map(singular).filter(w => !STOP.has(w) && !nameSet.has(w));
+    round._nameSet = nameSet;
+    round._phrases = [];
+    round._wordIdx = new Map();
+    round.answers.forEach((a, i) => {
+      for (const s of [a.name].concat(a.aliases)) {
+        const ws = clean(s);
+        if (!ws.length) continue;
+        // "on running" minus "on" isn't a phrase anymore, so only keep it if we just dropped glue words
+        const dropped = words(s).filter(w => STOP.has(w) && !nameSet.has(w));
+        if (dropped.every(w => GLUE.has(w))) round._phrases.push({ i, ws, len: ws.join('').length });
+        ws.forEach(w => {
+          if (w.length < 3) return;
+          if (!round._wordIdx.has(w)) round._wordIdx.set(w, new Set());
+          round._wordIdx.get(w).add(i);
+        });
+      }
+    });
     return round;
   };
 
@@ -263,14 +299,14 @@
   function fuzzyLookup(round, main) {
     const L = main.length;
     // typos
-    const tol = L < 4 ? 0 : L === 4 ? 1 : L <= 7 ? 1.5 : L <= 11 ? 2 : 2.5;
+    const tol = tolFor(L);
     if (tol) {
       const hits = [];
       for (const c of round._cand) {
         if (c.k.length < 3 || Math.abs(c.k.length - L) > tol + 1) continue;
         const d = dl(main, c.k, tol);
         // people rarely get the first letter wrong
-        if (d <= tol) hits.push({ t: c.t, score: d + (c.k[0] !== main[0] ? 0.5 : 0) });
+        if (d <= tol) hits.push({ t: c.t, score: d + (c.k[0] !== main[0] ? 1 : 0) });
       }
       const b = uniqueBest(hits.filter(h => h.score <= tol));
       if (b) return resolveTag(round, b.t, 'typo');
@@ -278,18 +314,67 @@
     // sounds right, spelled wrong
     if (L >= 4) {
       const ph = phonetic(main);
-      const hits = round._cand.filter(c => c.k.length >= 3 && c.ph === ph).map(c => ({ t: c.t, score: Math.abs(c.k.length - L) * 0.1 }));
+      let hits = round._cand.filter(c => c.k.length >= 3 && L >= 5 && ph.length >= 3 && c.ph === ph && Math.abs(c.k.length - L) <= 1).map(c => ({ t: c.t, score: Math.abs(c.k.length - L) * 0.1 }));
+      // close-ish sound for longer words ("hedfones" ~ "headphones")
+      if (!hits.length && ph.length >= 5 && L >= 6) {
+        hits = round._cand.filter(c => c.ph.length === ph.length && c.ph[0] === ph[0])
+          .map(c => ({ t: c.t, score: dl(ph, c.ph, 1) })).filter(h => h.score <= 1);
+      }
       const b = uniqueBest(hits);
       if (b) return resolveTag(round, b.t, 'sound');
     }
     // half-typed
-    if (L >= 4) {
-      const hits = round._cand.filter(c => c.k.length > L && c.k.startsWith(main) && L >= c.k.length * 0.45)
+    if (L >= 5) {
+      const hits = round._cand.filter(c => c.k.length > L && c.k.startsWith(main) && L >= c.k.length * 0.6)
         .map(c => ({ t: c.t, score: (c.k.length - L) * 0.05 }));
       const b = uniqueBest(hits);
       if (b) return resolveTag(round, b.t, 'prefix');
     }
     return null;
+  }
+
+  function tolFor(L) { return L < 4 ? 0 : L === 4 ? 0.7 : L <= 6 ? 1.5 : L <= 9 ? 2 : L <= 12 ? 2.5 : 3; }
+
+  // "frozen pizza by dr oetker" -> Dr. Oetker, "panels" -> Solar Panels, "outbord motor" -> Outboard Motors
+  function wordLookup(round, ws) {
+    const iw = ws.map(singular).filter(w => w.length >= 3 && !STOP.has(w) && !round._nameSet.has(w));
+    if (!iw.length) return null;
+    // fix typos word by word against words we know
+    const known = iw.map(w => {
+      if (round._wordIdx.has(w) || w.length < 5) return w;
+      const tol = Math.min(2, tolFor(w.length) - 0.5);
+      let best = null, bestD = 99, tie = false;
+      for (const k of round._wordIdx.keys()) {
+        if (Math.abs(k.length - w.length) > 2 || k[0] !== w[0]) continue;
+        const d = dl(w, k, tol);
+        if (d < bestD) { bestD = d; best = k; tie = false; } else if (d === bestD) tie = true;
+      }
+      return best && bestD <= tol && !tie ? best : w;
+    });
+    for (const w of known) if (round._excl.has(w)) return { status: 'retry', reason: 'excluded' };
+    const set = new Set(known);
+    // a whole answer phrase sitting inside what they typed
+    let best = null, tie = false;
+    for (const p of round._phrases) {
+      if (!p.ws.every(w => set.has(w))) continue;
+      if (!best || p.len > best.len) { best = p; tie = false; }
+      else if (p.len === best.len && p.i !== best.i) tie = true;
+    }
+    if (best && !tie && best.len >= 4) return { status: 'match', answer: round.answers[best.i], fuzzy: 'phrase' };
+    // a single word that only one answer has
+    const hits = new Map();
+    known.forEach(w => (round._wordIdx.get(w) || []).forEach(i => hits.set(i, (hits.get(i) || 0) + 1)));
+    if (!hits.size) return null;
+    const ranked = [...hits].map(([i, c]) => ({ i, c, extra: words(round.answers[i].name).length - c }))
+      .sort((a, b) => b.c - a.c || a.extra - b.extra);
+    const top = ranked[0], next = ranked[1];
+    if (next && next.c === top.c && next.extra === top.extra) return null;
+    const cover = Math.max(...round._phrases.filter(p => p.i === top.i)
+      .map(p => p.ws.filter(w => set.has(w)).join('').length / p.len), 0);
+    // brand aisles: also ok if it's the last word, the main thing ("panels" -> solar panels)
+    const head = round._phrases.some(p => p.i === top.i && p.ws.length > 1 && set.has(p.ws[p.ws.length - 1]) && p.ws[p.ws.length - 1].length >= 4);
+    if (round.type === 'brand' ? !(cover > 0.5 || (head && cover >= 0.4)) : cover <= 0.6) return null;
+    return { status: 'match', answer: round.answers[top.i], fuzzy: 'word' };
   }
 
   B.judge = function (round, input) {
@@ -314,6 +399,8 @@
       if (NICK[k]) { r = exactLookup(round, keysOf(NICK[k])); if (r) return Object.assign(r, { fuzzy: r.status === 'match' ? 'nickname' : undefined }); }
     }
     r = fuzzyLookup(round, main);
+    if (r) return r;
+    r = wordLookup(round, ws);
     if (r) return r;
     if (round.type === 'item') {
       for (const m of MEGA) if (keysOf(m).has(main)) {

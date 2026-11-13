@@ -151,7 +151,7 @@
     sign.classList.remove('lift', 'drop'); void sign.offsetWidth; sign.classList.add('drop');
     show($('#reveal'), false);
     show($('#answer-bar'), true);
-    show($('#toast'), false);
+    $('#toast').classList.remove('on');
     const input = $('#answer');
     input.value = ''; input.disabled = false; input.classList.remove('shake');
     setTimeout(() => input.focus({ preventScroll: true }), 120);
@@ -184,9 +184,18 @@
   }
 
   // answering
-  function toast(msg) {
-    const t = $('#toast'); t.textContent = msg; show(t, false); void t.offsetWidth; show(t, true);
-    clearTimeout(t._h); t._h = setTimeout(() => show(t, false), 1700);
+  // pops a message above the input, plus a stamp on the sign so you can't miss it
+  function toast(msg, stamp) {
+    const t = $('#toast');
+    t.textContent = msg;
+    t.classList.remove('on');
+    requestAnimationFrame(() => requestAnimationFrame(() => t.classList.add('on')));
+    clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove('on'), 1800);
+    const s = $('#sign-stamp');
+    s.textContent = stamp || '';
+    s.classList.remove('on');
+    if (stamp) requestAnimationFrame(() => requestAnimationFrame(() => s.classList.add('on')));
+    clearTimeout(s._h); s._h = setTimeout(() => s.classList.remove('on'), 1400);
   }
   function submit(e) {
     e && e.preventDefault();
@@ -199,7 +208,7 @@
       const msg = res.reason === 'vague' ? 'TOO VAGUE · BE MORE SPECIFIC'
         : res.reason === 'excluded' ? 'NOPE · ' + (r.twist || 'BREAKS THE RULE').toUpperCase()
         : r.type === 'brand' ? 'THAT’S THE BRAND ITSELF!' : 'NAME A BRAND, NOT THE ITEM';
-      toast(msg); A.sfx.buzz(); scene.nope();
+      toast(msg, res.reason === 'vague' ? 'TOO VAGUE' : 'NOPE'); A.sfx.buzz(); scene.nope();
       input.classList.remove('shake'); void input.offsetWidth; input.classList.add('shake');
       input.select();
       return;
@@ -207,7 +216,7 @@
     if (res.status === 'none') {
       // wrong answer: elevator jolts, keep guessing till time's up
       game.misses.push(val);
-      toast('OUT OF STOCK · TRY AGAIN');
+      toast('OUT OF STOCK · TRY AGAIN', 'OUT OF STOCK');
       scene.miss();
       input.classList.remove('shake'); void input.offsetWidth; input.classList.add('shake');
       input.select();
@@ -312,29 +321,46 @@
   }
 
   // results
+  // the log isn't linear: rare answers sink way down, only a vault answer hits the bottom strip
+  const LOG_LEFT = 24, LOG_CW = 32, LOG_TOP = 14, LOG_H = 100, VAULT_H = 12;
+  function logDepth(pts) {
+    if (pts >= 100) return LOG_H + VAULT_H / 2 + 2;
+    return LOG_H * Math.log(1 + pts / 10) / Math.log(1 + 95 / 10);
+  }
   function drawLog(canvas, puzzle, play, progress) {
-    const cols = 7, cw = 32, left = 18, top = 14, fl = 9, Wd = left + cols * cw, Hd = top + 10 * fl + 10;
+    const cols = 7, cw = LOG_CW, left = LOG_LEFT, top = LOG_TOP, Wd = left + cols * cw, Hd = top + LOG_H + VAULT_H + 4;
     canvas.width = Wd; canvas.height = Hd;
     const c = canvas.getContext('2d');
     const R = (x, y, w, h, col) => { c.fillStyle = col; c.fillRect(Math.round(x), Math.round(y), Math.round(w), Math.round(h)); };
     // sky
     for (let y = 0; y < top; y++) R(0, y, Wd, 1, `rgb(${Math.round(36 + y * 12)},${Math.round(18 + y * 3)},${Math.round(74 - y)})`);
     R(0, top - 1, Wd, 1, '#8a80a8');
-    const band = ['#3b2f57', '#3b2f57', '#2f3a5c', '#2f3a5c', '#4a2236', '#4a2236', '#173b38', '#173b38', '#3a2a1a', '#3a2a1a'];
-    for (let f = 0; f < 10; f++) { R(0, top + f * fl, Wd, fl, band[f]); R(0, top + f * fl + fl - 1, Wd, 1, 'rgba(0,0,0,0.35)'); }
-    R(0, top + 10 * fl, Wd, 10, '#2a2108');
+    // tier bands, squished so the rare ones take up most of the shaft
+    const bands = [[0, 10, '#2a2140'], [10, 20, '#3b2f57'], [20, 40, '#2f3a5c'], [40, 60, '#4a2236'], [60, 80, '#173b38'], [80, 100, '#3a2a1a']];
+    bands.forEach(([a, b, col]) => {
+      const y0 = top + logDepth(a), y1 = top + (b >= 100 ? LOG_H : logDepth(b));
+      R(0, y0, Wd, y1 - y0, col); R(0, y1 - 1, Wd, 1, 'rgba(0,0,0,0.35)');
+    });
+    // the vault strip
+    R(0, top + LOG_H, Wd, VAULT_H + 4, '#3a2c06');
+    R(0, top + LOG_H, Wd, 1, '#ffd23f');
     // labels
-    const FONT = { B: '110101110101110', G: '011100101101011', 0: '111101101101111', 1: '010110010010111', 5: '111100110001110' };
+    const FONT = {
+      G: '011100101101011', R: '110101110101101', A: '010101111101101', E: '111100110100111',
+      V: '101101101101010', U: '101101101101111', L: '100100100100111', T: '111010010010010'
+    };
     const txt = (s, x, y, col) => { c.fillStyle = col; let cx = x; for (const ch of s) { const g = FONT[ch]; if (g) for (let i = 0; i < 15; i++) if (g[i] === '1') c.fillRect(cx + i % 3, y + (i / 3 | 0), 1, 1); cx += 4; } };
-    txt('G', 3, top - 7, '#cfc6e6'); txt('B5', 2, top + 5 * fl - 3, '#cfc6e6'); txt('B10', 1, top + 10 * fl + 2, '#ffd23f');
+    txt('G', 3, top - 7, '#cfc6e6');
+    txt('RARE', 3, top + logDepth(60) + 3, '#7fe8c8');
+    txt('VAULT', 2, top + LOG_H + 4, '#ffd23f');
     for (let i = 0; i < cols; i++) {
       const r = play.rounds[i];
       const cx = left + i * cw + cw / 2;
-      R(left + i * cw, top, 1, 10 * fl, 'rgba(255,255,255,0.05)');
+      R(left + i * cw, top, 1, LOG_H + VAULT_H, 'rgba(255,255,255,0.05)');
       if (!r || r.pending) continue;
       const p = Math.max(0, Math.min(1, (progress - i * 0.08) / 0.5));
-      const depth = (r.pts / 10) * fl * (p < 1 ? (1 - Math.pow(1 - p, 3)) : 1);
-      const y = top + depth;
+      const depth = logDepth(r.pts) * (p < 1 ? (1 - Math.pow(1 - p, 3)) : 1);
+      const y = top + depth + 3;
       R(cx, 0, 1, y - 6, '#9a92ad');
       if (r.pts === 0 && p > 0) { R(cx - 2, top - 6, 5, 1, '#ff3b5c'); R(cx - 2, top - 2, 5, 1, '#ff3b5c'); }
       // cab

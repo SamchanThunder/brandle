@@ -75,6 +75,7 @@
             <div class="sign-main"><canvas id="sign-icon" width="18" height="18"></canvas><span id="sign-name">BRAND</span></div>
             <div class="sign-twist hidden" id="sign-twist"></div>
             <div class="sign-hint" id="sign-hint"></div>
+            <div id="sign-stamp" aria-hidden="true"></div>
             <div class="sign-foot">▼ rarer answers go deeper ▼</div>
           </div>
         </div>
@@ -83,7 +84,7 @@
       <div id="reveal" class="hidden"></div>
 
       <div id="answer-bar">
-        <div id="toast" class="hidden"></div>
+        <div id="toast" aria-live="polite"></div>
         <div class="answer-row">
           <div id="deli" aria-label="seconds left"><span class="deli-lbl">NOW<br>SERVING</span><b id="timer">25</b></div>
           <form id="answer-form" autocomplete="off">
