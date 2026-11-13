@@ -1,7 +1,8 @@
 ﻿# Brandle — The Daily Markdown
 Play it here: https://samchanthunder.github.io/brandle/
 
-![Brandle title screen](images/screenshot.png)
+<img width="900" height="500" alt="image" src="https://github.com/user-attachments/assets/bb7dcbf3-b0cd-4543-ba44-e28448feff0c" />
+
 
 A daily brand game. 7 aisles, 25 seconds each. Name a rare-but-real answer and the elevator drops deeper into the department store. Every aisle hides exactly one 100-point **Vault** answer.
 
