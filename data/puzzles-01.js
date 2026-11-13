@@ -5,10 +5,10 @@ V drinks, drink, beverages, beverage, liquid, food, stuff, things, products
 10 Soda = soft drink, pop, cola, coke, diet coke, coke zero, sprite, fanta, soda pop
 10 Water = bottled water, dasani, smartwater, sparkling water, topo chico, mineral water
 10 Juice = orange juice, minute maid, simply, simply orange, apple juice
-30 Lemonade
-30 Sports Drink = powerade, bodyarmor, body armor, electrolyte drink
-30 Iced Tea = tea, gold peak, honest tea, fuze, fuze tea
-30 Vitaminwater = vitamin water
+10 Lemonade
+10 Sports Drink = powerade, bodyarmor, body armor, electrolyte drink
+10 Iced Tea = tea, gold peak, honest tea, fuze, fuze tea
+10 Vitaminwater = vitamin water
 30 Energy Drink = coca cola energy
 30 Syrup = fountain syrup, soda syrup
 30 Coffee = costa, costa coffee, georgia coffee, canned coffee
@@ -33,10 +33,10 @@ I Sneakers | 👟
 10 Vans
 10 Puma
 10 Reebok
-30 Asics
-30 Skechers = sketchers
-30 Under Armour = under armor
-30 Hoka = hoka one one
+10 Asics
+10 Skechers = sketchers
+10 Under Armour = under armor
+10 Hoka = hoka one one
 30 On = on running, on cloud, oncloud
 30 Saucony
 30 Brooks
@@ -72,7 +72,7 @@ B Honda | known for: cars
 V vehicles, vehicle, transportation, machines, machinery, stuff, things, products, power equipment
 10 Cars = car, automobile, automobiles, suv, suvs, civic, accord, cr v, crv, minivan, odyssey, acura, truck, ridgeline
 10 Motorcycles = motorcycle, motorbike, motorbikes, dirt bike, dirt bikes, gold wing
-30 Scooters = scooter, moped, mopeds, ruckus, metropolitan
+10 Scooters = scooter, moped, mopeds, ruckus, metropolitan
 30 ATVs = atv, quad, quads, four wheeler, four wheelers, side by side, utv, pioneer
 30 Engines = engine, small engines, motors
 30 Lawn Mowers = lawn mower, mower, mowers, lawnmower, lawnmowers
@@ -99,16 +99,16 @@ I Cereal | 🥣
 10 Lucky Charms (sub)
 10 Cinnamon Toast Crunch (sub) = ctc
 10 Rice Krispies (sub) = rice crispies
-30 Cap'n Crunch (sub) = captain crunch, capn crunch
-30 Honey Bunches of Oats (sub)
-30 Special K (sub)
-30 Raisin Bran (sub)
-30 Fruity Pebbles (sub) = pebbles, cocoa pebbles
-30 Trix (sub)
-30 Cocoa Puffs (sub)
-30 Chex (sub)
-30 Apple Jacks (sub)
-30 Reese's Puffs (lic) = reeses puffs, reeses
+10 Cap'n Crunch (sub) = captain crunch, capn crunch
+10 Honey Bunches of Oats (sub)
+10 Special K (sub)
+10 Raisin Bran (sub)
+10 Fruity Pebbles (sub) = pebbles, cocoa pebbles
+10 Trix (sub)
+10 Cocoa Puffs (sub)
+10 Chex (sub)
+10 Apple Jacks (sub)
+10 Reese's Puffs (lic) = reeses puffs, reeses
 30 Kix (sub)
 30 Life (sub)
 30 Wheaties (sub)
@@ -142,8 +142,8 @@ I Headphones | 🎧
 10 JBL
 10 Samsung = galaxy buds
 10 Skullcandy = skull candy
-30 Sennheiser
-30 Audio-Technica = audio technica
+10 Sennheiser
+10 Audio-Technica = audio technica
 30 Jabra
 30 Anker = soundcore
 30 Logitech = logitech g
@@ -184,11 +184,11 @@ V instruments, musical instruments, vehicles, vehicle, electronics, music stuff,
 10 Motorcycles = motorcycle, motorbike, motorbikes, dirt bike, dirt bikes
 10 Pianos = piano, grand piano, digital piano
 10 Keyboards = keyboard, synth, synths, synthesizer, synthesizers
-30 Guitars = guitar, bass, bass guitar, acoustic guitar
-30 Drums = drum, drum kit, drum set, electronic drums
-30 Speakers = speaker, soundbar, soundbars
-30 Jet Skis = jet ski, waverunner, waverunners, personal watercraft
-30 Scooters = scooter, moped
+10 Guitars = guitar, bass, bass guitar, acoustic guitar
+10 Drums = drum, drum kit, drum set, electronic drums
+10 Speakers = speaker, soundbar, soundbars
+10 Jet Skis = jet ski, waverunner, waverunners, personal watercraft
+10 Scooters = scooter, moped
 30 Stereo Receivers = receiver, receivers, amplifier, amplifiers, amp, amps, stereo, home theater
 30 ATVs = atv, quad, four wheeler, side by side, utv
 30 Band Instruments = saxophone, sax, trumpet, trombone, flute, clarinet, tuba, french horn, brass, woodwinds, brass instruments
@@ -213,13 +213,13 @@ V stuff, things, products, home goods, decor, home decor, food, accessories
 X furniture, sofa, sofas, couch, couches, bed, beds, table, tables, chair, chairs, desk, desks, shelf, shelves, shelving, bookcase, bookshelf, bookshelves, billy, kallax, dresser, dressers, wardrobe, wardrobes, cabinet, cabinets, stool, stools, nightstand, drawers, mattress, mattresses, crib, kitchen cabinets, tv stand, futon, ottoman, bench
 10 Meatballs = meatball, swedish meatballs
 10 Lamps = lamp, lighting, lights, light
-30 Rugs = rug, carpet, carpets
-30 Bedding = sheets, bed sheets, duvet, duvets, pillow, pillows, comforter, blankets, blanket
-30 Kitchenware = pots, pans, pots and pans, dishes, plates, cutlery, utensils, mugs, cups, bowls, silverware, cookware
-30 Plants = plant, fake plants, houseplants, pots for plants, planters
-30 Storage Boxes = boxes, box, bins, storage, containers, food containers, tupperware
-30 Hot Dogs = hot dog, hotdog, hotdogs
-30 Curtains = curtain, blinds, drapes
+10 Rugs = rug, carpet, carpets
+10 Bedding = sheets, bed sheets, duvet, duvets, pillow, pillows, comforter, blankets, blanket
+10 Kitchenware = pots, pans, pots and pans, dishes, plates, cutlery, utensils, mugs, cups, bowls, silverware, cookware
+10 Plants = plant, fake plants, houseplants, pots for plants, planters
+10 Storage Boxes = boxes, box, bins, storage, containers, food containers, tupperware
+10 Hot Dogs = hot dog, hotdog, hotdogs
+10 Curtains = curtain, blinds, drapes
 30 Candles = candle, tealights, tea lights
 30 Picture Frames = frames, frame, picture frame
 30 Mirrors = mirror

@@ -291,6 +291,7 @@
 60 Chipwich
 60 Swensen's = swensens
 60 Farrell's = farrells
+60 Lactaid | Yep, lactose-free ice cream
 60 Mövenpick = movenpick
 60 Wall's = walls
 60 Amul

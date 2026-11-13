@@ -9,17 +9,17 @@ I Snack Bars | 🍫
 10 RXBAR = rx bar, rxbar
 10 Larabar = lara bar
 10 Fiber One
-30 Special K
-30 Kashi
-30 Belvita
-30 Rice Krispies Treats
-30 Nature's Bakery = natures bakery
-30 Pure Protein
-30 Quest
-30 Barebells
-30 Built = built bar
-30 One = one bar
-30 Kirkland (store)
+10 Special K
+10 Kashi
+10 Belvita
+10 Rice Krispies Treats
+10 Nature's Bakery = natures bakery
+10 Pure Protein
+10 Quest
+10 Barebells
+10 Built = built bar
+10 One = one bar
+10 Kirkland (store)
 30 Perfect Bar
 30 Think! = think, thinkthin
 30 Luna
@@ -38,7 +38,7 @@ I Snack Bars | 🍫
 B Peugeot | known for: cars (in France)
 V vehicles, transportation, machines, stuff
 10 Cars = car, 208, 308, 3008, 508, suv
-30 Scooters = scooter, moped
+10 Scooters = scooter, moped
 30 Vans = van
 30 Bicycles = bike, bikes, bicycle
 30 Motorcycles = motorcycle
@@ -54,9 +54,9 @@ I Electric Guitars | 🎸
 10 Gibson
 10 Ibanez
 10 Epiphone
-30 Squier = squire
-30 PRS = paul reed smith
-30 Gretsch
+10 Squier = squire
+10 PRS = paul reed smith
+10 Gretsch
 30 Jackson
 30 ESP = ltd
 30 Schecter
@@ -103,13 +103,13 @@ I Water Bottles | 🍶
 10 CamelBak = camelbak
 10 Contigo
 10 S'well = swell
-30 Klean Kanteen
-30 Takeya
-30 Simple Modern
-30 Iron Flask
-30 LARQ
-30 Brita
-30 BlenderBottle = blender bottle
+10 Klean Kanteen
+10 Takeya
+10 Simple Modern
+10 Iron Flask
+10 LARQ
+10 Brita
+10 BlenderBottle = blender bottle
 30 Zojirushi
 30 Corkcicle
 30 Polar
@@ -126,9 +126,9 @@ B Husqvarna | known for: chainsaws & lawn mowers
 V tools, machines, equipment, outdoor stuff, power equipment
 10 Chainsaws = chainsaw, chain saw
 10 Lawn Mowers = mower, mowers, riding mower, robot mower, automower
-30 Leaf Blowers = leaf blower, blower
-30 Trimmers = weed eater, string trimmer, hedge trimmer, trimmer
-30 Snowblowers = snowblower, snow blower
+10 Leaf Blowers = leaf blower, blower
+10 Trimmers = weed eater, string trimmer, hedge trimmer, trimmer
+10 Snowblowers = snowblower, snow blower
 30 Pressure Washers = pressure washer
 30 Protective Gear = chaps, helmets, safety gear, clothing
 30 Motorcycles = motorcycle, dirt bikes, dirt bike | The motorcycle brand is now owned separately
@@ -144,10 +144,10 @@ I Pianos | 🎹
 10 Kawai
 10 Baldwin
 10 Roland
-30 Casio
-30 Korg
-30 Fazioli
-30 Bechstein
+10 Casio
+10 Korg
+10 Fazioli
+10 Bechstein
 30 Blüthner = bluthner
 30 Boston (sub:Steinway)
 30 Essex (sub:Steinway)
@@ -177,8 +177,8 @@ B Harley-Davidson | known for: motorcycles | that isn't a motorcycle
 V stuff, things, merch, products, gear
 X motorcycle, motorcycles, motorbike, motorbikes, chopper, choppers, sportster, softail, electra glide, road king, fat boy, trike, trikes, livewire
 10 Clothing = clothes, jackets, leather jackets, shirts, t shirts, apparel, vests
-30 Boots = boot
-30 Parts = motorcycle parts
+10 Boots = boot
+10 Parts = motorcycle parts
 30 Helmets = helmet
 30 Toys = toy, die cast
 30 Motor Oil = oil
@@ -202,13 +202,13 @@ I Soap | 🧼
 10 Safeguard
 10 Caress
 10 Softsoap
-30 Olay
-30 Dr. Bronner's = dr bronners
-30 Method
-30 Mrs. Meyer's = mrs meyers
-30 Palmolive
-30 Dr. Squatch = dr squatch
-30 Native
+10 Olay
+10 Dr. Bronner's = dr bronners
+10 Method
+10 Mrs. Meyer's = mrs meyers
+10 Palmolive
+10 Dr. Squatch = dr squatch
+10 Native
 30 Lifebuoy
 30 Lux
 30 Coast
@@ -234,7 +234,7 @@ V vehicles, vehicle, transportation, luxury stuff
 10 Cars = car, 3 series, 5 series, x5, x3, m3, suv, suvs, sedan
 10 Electric Cars = ev, i3, i4, ix, electric car
 10 Motorcycles = motorcycle, motorrad, motorbike
-30 Minis = mini, mini cooper
+10 Minis = mini, mini cooper
 30 Rolls-Royces = rolls royce
 30 Race Cars = race car, m cars
 30 Clothing (lic) = clothes, jackets
@@ -248,13 +248,13 @@ I Stuffed Animals | 🧸
 10 Ty = beanie babies, beanie boos
 10 Squishmallows
 10 Jellycat
-30 Gund
-30 Webkinz = ganz
-30 Care Bears
-30 Disney
-30 Aurora
-30 Melissa & Doug = melissa and doug
-30 Pokémon = pokemon
+10 Gund
+10 Webkinz = ganz
+10 Care Bears
+10 Disney
+10 Aurora
+10 Melissa & Doug = melissa and doug
+10 Pokémon = pokemon
 30 Douglas
 30 Wild Republic
 30 Fisher-Price = fisher price
@@ -272,11 +272,11 @@ I Diapers | 🍼
 10 Pampers
 10 Huggies
 10 Luvs
-30 Honest = honest company
-30 Kirkland (store)
-30 Seventh Generation
-30 Parent's Choice (store) = parents choice
-30 Up&Up (store) = up and up
+10 Honest = honest company
+10 Kirkland (store)
+10 Seventh Generation
+10 Parent's Choice (store) = parents choice
+10 Up&Up (store) = up and up
 30 Coterie
 30 Bambo Nature = bambo
 30 Earth's Best = earths best
@@ -312,10 +312,10 @@ I Drones | 🚁
 10 DJI
 10 Skydio
 10 Autel
-30 Parrot
-30 Holy Stone
-30 Ryze = tello
-30 Potensic
+10 Parrot
+10 Holy Stone
+10 Ryze = tello
+10 Potensic
 30 Snaptain
 30 Yuneec
 30 Hubsan
@@ -335,12 +335,12 @@ X nike, adidas, new balance, puma, jordan, jordans, air jordan, converse
 10 Skechers = sketchers
 10 Under Armour = under armor
 10 Hoka
-30 On = on running, on cloud
-30 Saucony
-30 Brooks
-30 Fila
-30 Keds
-30 Allbirds
+10 On = on running, on cloud
+10 Saucony
+10 Brooks
+10 Fila
+10 Keds
+10 Allbirds
 30 Yeezy (disc)
 30 Onitsuka Tiger = onitsuka
 30 Mizuno
@@ -377,12 +377,12 @@ I Crackers | 🍘
 10 Club
 10 Townhouse
 10 Saltines = premium, nabisco premium
-30 Keebler
-30 Zesta
-30 Carr's = carrs
-30 Wasa
-30 Simple Mills
-30 Annie's = annies
+10 Keebler
+10 Zesta
+10 Carr's = carrs
+10 Wasa
+10 Simple Mills
+10 Annie's = annies
 30 Mary's Gone Crackers = marys gone crackers
 30 Late July
 30 Back to Nature
@@ -417,17 +417,17 @@ I Nail Polish | 💅
 10 Essie
 10 Sally Hansen
 10 Revlon
-30 Olive & June = olive and june
-30 Zoya
-30 Orly
-30 Maybelline
-30 NYX
-30 China Glaze
-30 Chanel
-30 Dior
-30 Butter London
-30 Color Street
-30 Wet n Wild
+10 Olive & June = olive and june
+10 Zoya
+10 Orly
+10 Maybelline
+10 NYX
+10 China Glaze
+10 Chanel
+10 Dior
+10 Butter London
+10 Color Street
+10 Wet n Wild
 30 Deborah Lippmann
 30 CND
 30 Sinful Colors
@@ -447,9 +447,9 @@ I Toasters | 🍞
 10 Black+Decker = black and decker
 10 Oster
 10 Breville
-30 Sunbeam
-30 Toastmaster
-30 Proctor Silex = proctor-silex
+10 Sunbeam
+10 Toastmaster
+10 Proctor Silex = proctor-silex
 30 GE = general electric
 30 Smeg
 30 Krups
@@ -476,9 +476,9 @@ B Armani | known for: designer fashion
 V fashion, luxury stuff, stuff, designer stuff
 10 Clothing = clothes, suits, dresses, jeans, armani exchange
 10 Perfume = cologne, fragrance, acqua di gio
-30 Watches = watch
-30 Sunglasses = glasses, eyewear
-30 Shoes
+10 Watches = watch
+10 Sunglasses = glasses, eyewear
+10 Shoes
 30 Makeup = cosmetics, foundation, armani beauty
 30 Handbags = bags
 30 Underwear
@@ -494,9 +494,9 @@ I VR Headsets | 🥽
 10 Apple = vision pro
 10 Sony = playstation vr, psvr
 10 HTC = vive
-30 Valve = index
-30 Samsung = gear vr, odyssey
-30 Pico
+10 Valve = index
+10 Samsung = gear vr, odyssey
+10 Pico
 30 HP = reverb
 30 Google = cardboard, daydream
 30 Bigscreen
@@ -514,9 +514,9 @@ X coffee, coffees, latte, lattes, frappuccino, frappuccinos, tea, teas, drinks, 
 10 Pastries = cake pops, cake pop, muffins, croissants, scones, baked goods, pastry
 10 Breakfast Sandwiches = egg bites, sandwiches, sandwich
 10 Mugs = mug, cups, cup, tumblers, tumbler, cold cups
-30 Coffee Beans = beans, ground coffee, k cups, pods, whole bean
-30 Gift Cards = gift card
-30 Snacks = chips, protein boxes, protein box
+10 Coffee Beans = beans, ground coffee, k cups, pods, whole bean
+10 Gift Cards = gift card
+10 Snacks = chips, protein boxes, protein box
 30 Oatmeal
 30 Clothing = clothes, aprons, apron
 60 Coffee Machines (disc) = coffee maker, verismo
@@ -532,12 +532,12 @@ I Mayo | 🥪
 10 Duke's = dukes
 10 Kraft
 10 Miracle Whip
-30 Heinz
-30 Sir Kensington's = sir kensingtons
-30 Primal Kitchen
-30 Blue Plate
-30 Kirkland (store)
-30 Great Value (store)
+10 Heinz
+10 Sir Kensington's = sir kensingtons
+10 Primal Kitchen
+10 Blue Plate
+10 Kirkland (store)
+10 Great Value (store)
 30 Chosen Foods = chosen
 30 Spectrum
 30 Vegenaise = follow your heart
@@ -575,14 +575,14 @@ I Hats | 🧢
 10 Stetson
 10 Carhartt
 10 Lids
-30 Kangol
-30 Under Armour = under armor
-30 Richardson
-30 Flexfit
-30 Zephyr
-30 Goorin Bros = goorin
-30 Brixton
-30 Patagonia
+10 Kangol
+10 Under Armour = under armor
+10 Richardson
+10 Flexfit
+10 Zephyr
+10 Goorin Bros = goorin
+10 Brixton
+10 Patagonia
 30 Bailey
 30 Resistol
 30 Tilley
@@ -600,11 +600,11 @@ I Stand Mixers | 🍰
 10 Sunbeam
 10 Bosch
 10 Kenwood
-30 Breville
-30 Smeg
-30 Ankarsrum
-30 Oster
-30 Dash
+10 Breville
+10 Smeg
+10 Ankarsrum
+10 Oster
+10 Dash
 30 Black+Decker = black and decker
 30 Wolf
 30 Bella
@@ -617,7 +617,7 @@ I Stand Mixers | 🍰
 B Tiffany | known for: jewelry & the little blue box
 V jewelry stuff, luxury stuff, accessories, gifts
 10 Jewelry = rings, ring, necklaces, necklace, bracelets, earrings, engagement rings, diamonds
-30 Watches = watch
+10 Watches = watch
 30 Lamps = lamp, tiffany lamps | The famous lamps came from Louis Comfort Tiffany's own studio
 30 Silverware = flatware, silver
 30 Sunglasses
@@ -634,12 +634,12 @@ I RVs & Campers | 🚐
 10 Jayco
 10 Thor
 10 Forest River
-30 Coachmen
-30 Fleetwood
-30 Keystone
-30 Grand Design
-30 Newmar
-30 Tiffin
+10 Coachmen
+10 Fleetwood
+10 Keystone
+10 Grand Design
+10 Newmar
+10 Tiffin
 30 Entegra
 30 Heartland
 30 Holiday Rambler
@@ -669,20 +669,20 @@ X american, american airlines, delta, delta airlines, united, united airlines, s
 10 British Airways = ba
 10 Lufthansa
 10 Emirates
-30 Qatar = qatar airways
-30 Air France
-30 KLM
-30 Singapore = singapore airlines
-30 Qantas
-30 Virgin Atlantic
-30 Ryanair
-30 Sun Country
-30 WestJet
-30 Cathay Pacific = cathay
-30 Turkish = turkish airlines
-30 Etihad
-30 EasyJet
-30 Japan Airlines = jal
+10 Qatar = qatar airways
+10 Air France
+10 KLM
+10 Singapore = singapore airlines
+10 Qantas
+10 Virgin Atlantic
+10 Ryanair
+10 Sun Country
+10 WestJet
+10 Cathay Pacific = cathay
+10 Turkish = turkish airlines
+10 Etihad
+10 EasyJet
+10 Japan Airlines = jal
 30 Breeze
 30 Aer Lingus
 30 Iberia
@@ -725,15 +725,15 @@ I Butter | 🧈
 10 Challenge
 10 Tillamook
 10 Kirkland (store)
-30 Plugrá = plugra
-30 Organic Valley
-30 Président = president
-30 Great Value (store)
-30 Vital Farms
-30 Breakstone's = breakstones
-30 Cabot
-30 Country Crock
-30 I Can't Believe It's Not Butter = i cant believe its not butter
+10 Plugrá = plugra
+10 Organic Valley
+10 Président = president
+10 Great Value (store)
+10 Vital Farms
+10 Breakstone's = breakstones
+10 Cabot
+10 Country Crock
+10 I Can't Believe It's Not Butter = i cant believe its not butter
 30 Smart Balance
 30 Earth Balance
 30 Miyoko's = miyokos
@@ -751,7 +751,7 @@ V electronics, entertainment, gaming stuff
 30 Arcade Machines = arcade games, arcades, arcade
 30 Movies = movie, sonic movie
 60 Toys = sega toys, toy
-30 Mobile Games = mobile game, app, apps
+10 Mobile Games = mobile game, app, apps
 30 Clothing (lic) = clothes, merch
 60 Theme Parks = joypolis, sega world, amusement park
 60 Pachinko Machines = pachinko, slot machines
@@ -763,11 +763,11 @@ I Umbrellas | ☂️
 10 Davek
 10 Senz
 10 Blunt
-30 Repel
-30 GustBuster
-30 ShedRain
-30 London Fog
-30 Burberry
+10 Repel
+10 GustBuster
+10 ShedRain
+10 London Fog
+10 Burberry
 30 Lewis N. Clark = lewis n clark
 30 Kirkland (store)
 30 Swaine Adeney Brigg = swaine
@@ -788,16 +788,16 @@ I Cookware | 🍳
 10 Caraway
 10 Our Place = always pan
 10 HexClad
-30 Staub
-30 Made In
-30 GreenPan
-30 Circulon
-30 Farberware
-30 Anolon
-30 Scanpan
-30 Tramontina
-30 Pyrex
-30 Ninja
+10 Staub
+10 Made In
+10 GreenPan
+10 Circulon
+10 Farberware
+10 Anolon
+10 Scanpan
+10 Tramontina
+10 Pyrex
+10 Ninja
 30 Mauviel
 30 Zwilling
 30 Corningware = corning
@@ -817,8 +817,8 @@ I Cookware | 🍳
 B Ralph Lauren | known for: Polo shirts
 V fashion, clothes stuff, luxury stuff
 10 Polo Shirts = polo, polos, shirts, clothes, clothing
-30 Perfume = cologne, fragrance, polo cologne
-30 Sweaters = sweater
+10 Perfume = cologne, fragrance, polo cologne
+10 Sweaters = sweater
 30 Shoes
 30 Home Goods = bedding, towels, sheets, furniture, ralph lauren home
 30 Handbags = bags
@@ -834,9 +834,9 @@ I Tape | 🩹
 10 Duck = duck tape, duck brand
 10 Gorilla
 10 3M
-30 Frog Tape = frogtape
+10 Frog Tape = frogtape
 100 Shurtape = shurtech | Shurtape Technologies, a family company from North Carolina, is the one behind both Duck Tape and FrogTape.
-30 Elmer's = elmers
+10 Elmer's = elmers
 30 Tesa
 30 Nashua
 30 Intertape
@@ -853,7 +853,7 @@ X crayon, crayons, twistables, crayola crayons
 10 Colored Pencils = colored pencil, pencils
 10 Paint = paints, watercolors, finger paint, tempera, paint set
 10 Chalk = sidewalk chalk
-30 Coloring Books = coloring book, coloring pages
+10 Coloring Books = coloring book, coloring pages
 30 Scissors
 30 Glue = glue stick
 30 Model Magic = clay, modeling clay, dough
@@ -870,10 +870,10 @@ I Jam & Jelly | 🍓
 10 Smucker's = smuckers
 10 Welch's = welchs
 10 Bonne Maman
-30 Polaner
-30 Crofter's = crofters
-30 Stonewall Kitchen
-30 Great Value (store)
+10 Polaner
+10 Crofter's = crofters
+10 Stonewall Kitchen
+10 Great Value (store)
 30 Kirkland (store)
 30 Trader Joe's (store) = trader joes
 30 Dickinson's = dickinsons
@@ -896,11 +896,11 @@ V tech, apps, software, services, websites, internet
 10 Android
 10 Translate = google translate
 10 Docs = google docs, sheets, drive, slides
-30 Smart Speakers = nest, google home, speaker, speakers
-30 Chromebooks = laptop, laptops, pixelbook, chromebook
-30 AI = gemini, bard, chatbot
-30 Earbuds = pixel buds
-30 Smartwatches = pixel watch, watch
+10 Smart Speakers = nest, google home, speaker, speakers
+10 Chromebooks = laptop, laptops, pixelbook, chromebook
+10 AI = gemini, bard, chatbot
+10 Earbuds = pixel buds
+10 Smartwatches = pixel watch, watch
 30 Thermostats = nest thermostat, thermostat
 30 Doorbells = nest doorbell, doorbell, security cameras
 30 Chromecast = streaming stick
@@ -919,13 +919,13 @@ I Lip Balm | 💋
 10 Burt's Bees = burts bees
 10 Blistex
 10 EOS
-30 Aquaphor
-30 Vaseline
-30 Nivea
-30 Labello
-30 Lip Smacker
-30 Glossier
-30 Laneige
+10 Aquaphor
+10 Vaseline
+10 Nivea
+10 Labello
+10 Lip Smacker
+10 Glossier
+10 Laneige
 30 Rhode
 30 Softlips
 30 Sun Bum
@@ -943,13 +943,13 @@ I Strollers | 🚼
 10 Baby Jogger
 10 BOB
 10 Evenflo
-30 Nuna
-30 Thule
-30 Joovy
-30 Maclaren
-30 Britax
-30 Doona
-30 Babyzen = yoyo
+10 Nuna
+10 Thule
+10 Joovy
+10 Maclaren
+10 Britax
+10 Doona
+10 Babyzen = yoyo
 30 Summer
 30 Mockingbird
 30 Cybex
@@ -963,9 +963,9 @@ I Strollers | 🚼
 B Hallmark | known for: greeting cards
 V paper stuff, gifts, stuff, products
 10 Greeting Cards = cards, card, birthday cards
-30 Christmas Movies = movies, hallmark movies, hallmark channel, tv channel, channel
-30 Ornaments = keepsake ornaments, christmas ornaments
-30 Gift Wrap = wrapping paper, gift bags, bows
+10 Christmas Movies = movies, hallmark movies, hallmark channel, tv channel, channel
+10 Ornaments = keepsake ornaments, christmas ornaments
+10 Gift Wrap = wrapping paper, gift bags, bows
 30 Plush = stuffed animals
 30 Calendars = calendar
 30 Gift Books = books
@@ -983,11 +983,11 @@ I Mints | 🍬
 10 Certs
 10 Breath Savers
 10 Life Savers = lifesavers
-30 Starlight = starlight mints
-30 York
-30 Andes
-30 Junior Mints
-30 PUR
+10 Starlight = starlight mints
+10 York
+10 Andes
+10 Junior Mints
+10 PUR
 30 Smints
 30 Polo
 30 Pep-O-Mint = pep o mint
@@ -1000,12 +1000,12 @@ X netflix, hulu, disney plus, disney+, disneyplus, max, hbo max, hbo, prime vide
 10 Peacock
 10 Paramount+ = paramount plus, paramount
 10 Apple TV+ = apple tv, apple tv plus
-30 Tubi
-30 Pluto TV = pluto
-30 Crunchyroll
-30 ESPN+ = espn plus, espn
-30 Sling
-30 Twitch
+10 Tubi
+10 Pluto TV = pluto
+10 Crunchyroll
+10 ESPN+ = espn plus, espn
+10 Sling
+10 Twitch
 30 Starz
 30 Showtime
 30 Fubo
@@ -1045,14 +1045,14 @@ I Bacon | 🥓
 10 Hatfield
 10 Bob Evans
 10 Kirkland (store)
-30 Applegate
-30 Boar's Head = boars head
-30 Jimmy Dean
-30 Farmland
-30 Great Value (store)
-30 Gwaltney
-30 Bar-S = bar s
-30 Plumrose
+10 Applegate
+10 Boar's Head = boars head
+10 Jimmy Dean
+10 Farmland
+10 Great Value (store)
+10 Gwaltney
+10 Bar-S = bar s
+10 Plumrose
 30 Pederson's = pedersons
 30 Hempler's = hemplers
 30 Tender Belly
@@ -1065,8 +1065,8 @@ B Patagonia | known for: outdoor clothing
 V gear, outdoor stuff, clothes stuff, stuff
 10 Jackets = jacket, fleece, fleeces, puffer, coats, coat, better sweater, nano puff
 10 Clothing = clothes, shirts, pants, shorts, hoodies, apparel, baggies
-30 Backpacks = backpack, bags, duffel, black hole duffel
-30 Hats = hat, caps
+10 Backpacks = backpack, bags, duffel, black hole duffel
+10 Hats = hat, caps
 30 Socks
 30 Wetsuits = wetsuit, surf gear
 30 Fishing Waders = waders
@@ -1084,10 +1084,10 @@ I Paint | 🎨
 10 Glidden
 10 PPG
 10 Rust-Oleum = rustoleum
-30 Krylon
-30 Kilz
-30 Dutch Boy
-30 Clark+Kensington = clark and kensington
+10 Krylon
+10 Kilz
+10 Dutch Boy
+10 Clark+Kensington = clark and kensington
 30 Pittsburgh Paints = pittsburgh
 30 Dunn-Edwards = dunn edwards
 30 Kelly-Moore = kelly moore
@@ -1108,16 +1108,16 @@ I Candles | 🕯️
 10 Glade
 10 Diptyque
 10 Jo Malone
-30 Voluspa
-30 Boy Smells
-30 Capri Blue
-30 WoodWick
-30 Paddywax
-30 Nest
-30 Le Labo
-30 Byredo
-30 Chesapeake Bay
-30 Village Candle
+10 Voluspa
+10 Boy Smells
+10 Capri Blue
+10 WoodWick
+10 Paddywax
+10 Nest
+10 Le Labo
+10 Byredo
+10 Chesapeake Bay
+10 Village Candle
 30 Mrs. Meyer's = mrs meyers
 30 Goose Creek
 30 Febreze
@@ -1135,9 +1135,9 @@ V hygiene products, beauty products, bathroom stuff, personal care
 10 Body Wash = shower gel
 10 Deodorant = antiperspirant
 10 Shampoo = conditioner
-30 Lotion = moisturizer, body lotion
-30 Men+Care = men care, mens dove
-30 Hand Wash = hand soap
+10 Lotion = moisturizer, body lotion
+10 Men+Care = men care, mens dove
+10 Hand Wash = hand soap
 30 Dry Shampoo
 30 Face Wash = face cleanser
 30 Body Scrub = scrub
@@ -1159,23 +1159,23 @@ I Wine | 🍷
 10 La Marca
 10 Kim Crawford
 10 Franzia
-30 Meiomi
-30 Black Box
-30 Bota Box
-30 Beringer
-30 Gallo
-30 Woodbridge
-30 Cupcake
-30 Menage a Trois
-30 Stella Rosa
-30 Charles Shaw = two buck chuck
-30 Moët = moet
-30 Veuve Clicquot = veuve
-30 Dom Pérignon = dom perignon
-30 André = andre
-30 Cook's = cooks
-30 Korbel
-30 Chateau Ste. Michelle = chateau ste michelle
+10 Meiomi
+10 Black Box
+10 Bota Box
+10 Beringer
+10 Gallo
+10 Woodbridge
+10 Cupcake
+10 Menage a Trois
+10 Stella Rosa
+10 Charles Shaw = two buck chuck
+10 Moët = moet
+10 Veuve Clicquot = veuve
+10 Dom Pérignon = dom perignon
+10 André = andre
+10 Cook's = cooks
+10 Korbel
+10 Chateau Ste. Michelle = chateau ste michelle
 30 Caymus
 30 Opus One
 30 Silver Oak
@@ -1193,12 +1193,12 @@ X hershey, hersheys, mars, nestle, cadbury, mms, m&ms, snickers, twix, milky way
 10 Ferrero Rocher = ferrero
 10 Toblerone
 10 Kinder
-30 Russell Stover
-30 Milka
-30 Ritter Sport
-30 See's = sees, sees candies
-30 Tony's Chocolonely = tonys
-30 Feastables
+10 Russell Stover
+10 Milka
+10 Ritter Sport
+10 See's = sees, sees candies
+10 Tony's Chocolonely = tonys
+10 Feastables
 30 Hu
 30 Lily's = lilys
 30 Alter Eco
@@ -1225,12 +1225,12 @@ I Salsa | 🌶️
 10 Old El Paso
 10 Herdez
 10 La Victoria
-30 Frontera
-30 Newman's Own = newmans own
-30 Mateo's = mateos
-30 Green Mountain Gringo
-30 Ortega
-30 Taco Bell (lic)
+10 Frontera
+10 Newman's Own = newmans own
+10 Mateo's = mateos
+10 Green Mountain Gringo
+10 Ortega
+10 Taco Bell (lic)
 30 Desert Pepper
 30 Fresh Cravings
 30 Kirkland (store)
@@ -1247,7 +1247,7 @@ V clothes stuff, athletic stuff, gear, activewear
 10 Clothing = shirts, hoodies, jackets, shorts, apparel, scuba hoodie, clothes
 10 Sports Bras = sports bra
 10 Yoga Mats = mat, yoga mat
-30 Bags = belt bag, everywhere belt bag, backpack, backpacks, fanny pack
+10 Bags = belt bag, everywhere belt bag, backpack, backpacks, fanny pack
 30 Water Bottles = water bottle
 30 Headbands = headband
 30 Socks
@@ -1262,11 +1262,11 @@ I Pickles | 🥒
 10 Claussen
 10 Mt. Olive = mount olive, mt olive
 10 Grillo's = grillos
-30 Heinz
-30 Famous Dave's = famous daves
-30 Bubbies
-30 Wickles
-30 Best Maid
+10 Heinz
+10 Famous Dave's = famous daves
+10 Bubbies
+10 Wickles
+10 Best Maid
 30 Gedney
 30 Farman's = farmans
 30 Del Monte
@@ -1286,13 +1286,13 @@ I Sub Sandwiches | 🥪
 10 Jersey Mike's = jersey mikes
 10 Firehouse Subs = firehouse
 10 Potbelly
-30 Quiznos
-30 Which Wich
-30 Arby's = arbys
-30 Panera
-30 Wawa
-30 Publix = pub sub
-30 Sheetz
+10 Quiznos
+10 Which Wich
+10 Arby's = arbys
+10 Panera
+10 Wawa
+10 Publix = pub sub
+10 Sheetz
 30 Jason's Deli = jasons deli
 30 McAlister's = mcalisters
 30 Blimpie
@@ -1333,18 +1333,18 @@ I SUVs | 🚙
 10 Kia
 10 Nissan
 10 GMC
-30 BMW
-30 Mercedes-Benz = mercedes
-30 Lexus
-30 Land Rover = range rover
-30 Mazda
-30 Volkswagen = vw
-30 Audi
-30 Tesla
-30 Cadillac
-30 Lincoln
-30 Volvo
-30 Acura
+10 BMW
+10 Mercedes-Benz = mercedes
+10 Lexus
+10 Land Rover = range rover
+10 Mazda
+10 Volkswagen = vw
+10 Audi
+10 Tesla
+10 Cadillac
+10 Lincoln
+10 Volvo
+10 Acura
 30 Porsche
 30 Buick
 30 Dodge
@@ -1380,16 +1380,16 @@ X dasani, aquafina, fiji, poland spring
 10 Arrowhead
 10 Perrier
 10 San Pellegrino = pellegrino
-30 Ozarka
-30 Zephyrhills
-30 Ice Mountain
-30 Crystal Geyser
-30 Core
-30 Pure Life = nestle pure life
-30 Kirkland (store)
-30 Liquid Death
-30 Topo Chico
-30 Great Value (store)
+10 Ozarka
+10 Zephyrhills
+10 Ice Mountain
+10 Crystal Geyser
+10 Core
+10 Pure Life = nestle pure life
+10 Kirkland (store)
+10 Liquid Death
+10 Topo Chico
+10 Great Value (store)
 30 Acqua Panna
 30 Volvic
 30 Mountain Valley
@@ -1416,11 +1416,11 @@ I Pancake Mix | 🥞
 10 Aunt Jemima (disc)
 10 Hungry Jack
 10 Kodiak Cakes = kodiak
-30 Birch Benders
-30 Bob's Red Mill = bobs red mill
-30 Pioneer
-30 Arrowhead Mills
-30 Great Value (store)
+10 Birch Benders
+10 Bob's Red Mill = bobs red mill
+10 Pioneer
+10 Arrowhead Mills
+10 Great Value (store)
 30 Kirkland (store)
 30 Trader Joe's (store) = trader joes
 30 IHOP (lic)
@@ -1436,8 +1436,8 @@ V fashion, luxury stuff, beauty stuff, designer stuff
 10 Handbags = bags, purses, purse, classic flap
 10 Clothing = clothes, tweed jackets, suits, dresses
 10 Makeup = lipstick, nail polish, cosmetics
-30 Jewelry
-30 Shoes = ballet flats
+10 Jewelry
+10 Shoes = ballet flats
 30 Watches = watch, j12
 30 Sunglasses = eyewear
 30 Skincare = skin care
@@ -1454,18 +1454,18 @@ I Dog Food | 🐕
 10 Hill's = hills, science diet
 10 Royal Canin
 10 Beneful
-30 Rachael Ray Nutrish = nutrish
-30 Ol' Roy = ol roy
-30 Kibbles 'n Bits = kibbles n bits
-30 Alpo
-30 Cesar
-30 Milk-Bone = milk bone
-30 Merrick
-30 Wellness
-30 Taste of the Wild
-30 The Farmer's Dog = farmers dog
-30 Ollie
-30 Kirkland (store)
+10 Rachael Ray Nutrish = nutrish
+10 Ol' Roy = ol roy
+10 Kibbles 'n Bits = kibbles n bits
+10 Alpo
+10 Cesar
+10 Milk-Bone = milk bone
+10 Merrick
+10 Wellness
+10 Taste of the Wild
+10 The Farmer's Dog = farmers dog
+10 Ollie
+10 Kirkland (store)
 30 Orijen
 30 Acana
 30 Nutro
@@ -1502,18 +1502,18 @@ I Gas Stations | ⛽
 10 Wawa
 10 Sheetz
 10 Buc-ee's = bucees
-30 Phillips 66
-30 Conoco
-30 Texaco
-30 Arco
-30 QuikTrip = qt
-30 Casey's = caseys
-30 RaceTrac
-30 Love's = loves
-30 Pilot = pilot flying j
-30 Flying J
-30 Kwik Trip
-30 Murphy USA = murphy
+10 Phillips 66
+10 Conoco
+10 Texaco
+10 Arco
+10 QuikTrip = qt
+10 Casey's = caseys
+10 RaceTrac
+10 Love's = loves
+10 Pilot = pilot flying j
+10 Flying J
+10 Kwik Trip
+10 Murphy USA = murphy
 30 Holiday
 30 Maverik
 30 Getty
@@ -1532,8 +1532,8 @@ I Gas Stations | ⛽
 B Timex | known for: watches
 V accessories, electronics, gadgets
 10 Watches = watch, ironman, weekender, kids watches
-30 Indiglo = glow, night light
-30 Watch Bands = straps, bands, watch straps
+10 Indiglo = glow, night light
+10 Watch Bands = straps, bands, watch straps
 30 Alarm Clocks = clock, clocks, alarm clock
 30 Smartwatches = smartwatch
 30 Fitness Trackers = fitness tracker
@@ -1548,11 +1548,11 @@ I Hot Cocoa | ☕
 10 Nestlé = nestle
 10 Ghirardelli
 10 Starbucks
-30 Hershey's = hersheys
-30 Godiva
-30 Abuelita
-30 Ibarra
-30 Carnation
+10 Hershey's = hersheys
+10 Godiva
+10 Abuelita
+10 Ibarra
+10 Carnation
 30 Stephen's = stephens
 30 Kirkland (store)
 30 Great Value (store)
@@ -1565,7 +1565,7 @@ I Hotels | 🏨 | from a brand known for something else
 X marriott, hilton, hyatt, ihg, holiday inn, best western, wyndham, four seasons, ritz carlton, ritz-carlton, sheraton, westin, motel 6, la quinta, hampton inn, radisson, accor, choice hotels, comfort inn, days inn, super 8, red roof inn, omni, fairmont, w hotels, courtyard, embassy suites, doubletree, kimpton, great wolf lodge, gaylord, mandarin oriental, peninsula, st regis, waldorf astoria
 10 Disney = disney resorts
 10 Hard Rock
-30 Margaritaville
+10 Margaritaville
 30 Virgin = virgin hotels
 30 Legoland = lego
 30 Nobu
@@ -1593,10 +1593,10 @@ I Sports Drinks | 🧃
 10 Prime
 10 Propel
 10 Liquid I.V. = liquid iv
-30 Pedialyte
-30 Electrolit
-30 Nuun
-30 Vitaminwater = vitamin water
+10 Pedialyte
+10 Electrolit
+10 Nuun
+10 Vitaminwater = vitamin water
 30 Biosteel
 30 Skratch = skratch labs
 30 Gatorlyte
@@ -1615,10 +1615,10 @@ V gear, outdoor stuff, camping stuff, stuff
 10 Lanterns = lantern
 10 Camp Stoves = stove, stoves, propane stove
 10 Sleeping Bags = sleeping bag
-30 Air Mattresses = air mattress, air bed
-30 Camp Chairs = chair, chairs
-30 Propane = fuel, propane cylinders
-30 Grills = grill
+10 Air Mattresses = air mattress, air bed
+10 Camp Chairs = chair, chairs
+10 Propane = fuel, propane cylinders
+10 Grills = grill
 30 Flashlights = flashlight
 30 Heaters = heater
 30 Kayaks = kayak
@@ -1637,16 +1637,16 @@ I Cleaning Spray | 🧽
 10 Method
 10 Mrs. Meyer's = mrs meyers
 10 Scrubbing Bubbles
-30 Seventh Generation
-30 Fantastik
-30 Bar Keepers Friend
-30 Comet
-30 Simple Green
-30 Soft Scrub
-30 Ajax
-30 Zep
-30 Pledge
-30 Febreze
+10 Seventh Generation
+10 Fantastik
+10 Bar Keepers Friend
+10 Comet
+10 Simple Green
+10 Soft Scrub
+10 Ajax
+10 Zep
+10 Pledge
+10 Febreze
 30 Krud Kutter
 30 Kaboom
 30 Lemi Shine
@@ -1660,10 +1660,10 @@ I Snack Cakes | 🧁
 10 Hostess = twinkies, ding dongs, ho hos
 10 Tastykake = tasty kake
 10 Entenmann's = entenmanns
-30 Drake's = drakes
-30 Dolly Madison
-30 Mrs. Freshley's = mrs freshleys
-30 Marinela
+10 Drake's = drakes
+10 Dolly Madison
+10 Mrs. Freshley's = mrs freshleys
+10 Marinela
 30 Bimbo
 30 Lofthouse
 30 Otis Spunkmeyer
@@ -1673,7 +1673,7 @@ I Snack Cakes | 🧁
 B Aston Martin | known for: James Bond's cars
 V vehicles, luxury stuff, stuff
 10 Cars = car, db5, db11, db12, vantage, dbs, valkyrie, suv, dbx
-30 F1 Team = f1, formula 1, race cars, race car
+10 F1 Team = f1, formula 1, race cars, race car
 30 Model Cars = toy cars, lego aston martin, die cast
 30 Clothing (lic) = clothes
 60 Watches = watch
@@ -1692,12 +1692,12 @@ I Airplanes | ✈️
 10 Bombardier
 10 Lockheed Martin = lockheed
 10 Gulfstream
-30 Piper
-30 Beechcraft
-30 Cirrus
-30 Dassault
-30 Learjet
-30 Honda = hondajet
+10 Piper
+10 Beechcraft
+10 Cirrus
+10 Dassault
+10 Learjet
+10 Honda = hondajet
 30 Mooney
 30 Diamond
 30 Pilatus
@@ -1726,10 +1726,10 @@ X michelin, goodyear, bridgestone, firestone, bfgoodrich, bf goodrich, cooper
 10 Continental
 10 Hankook
 10 Yokohama
-30 Toyo
-30 Falken
-30 Nitto
-30 Dunlop
+10 Toyo
+10 Falken
+10 Nitto
+10 Dunlop
 30 General
 30 Kumho
 30 Nokian
@@ -1764,11 +1764,11 @@ I Fruit Snacks | 🍇
 10 Fruit by the Foot
 10 Fruit Roll-Ups = fruit roll ups
 10 Annie's = annies
-30 Black Forest
-30 Kirkland (store)
-30 Great Value (store)
-30 SunRype
-30 Stretch Island
+10 Black Forest
+10 Kirkland (store)
+10 Great Value (store)
+10 SunRype
+10 Stretch Island
 30 That's It = thats it
 30 Bear = bear yoyos
 30 Sour Punch
@@ -1783,10 +1783,10 @@ V sports stuff, gear, equipment, sports equipment
 10 Basketballs = basketball, nba basketball
 10 Tennis Balls = tennis ball
 10 Tennis Rackets = racket, racquet, tennis racket
-30 Baseball Gloves = gloves, glove, mitts, mitt
-30 Baseballs = baseball
-30 Golf Clubs = golf club, golf
-30 Golf Balls = golf ball
+10 Baseball Gloves = gloves, glove, mitts, mitt
+10 Baseballs = baseball
+10 Golf Clubs = golf club, golf
+10 Golf Balls = golf ball
 30 Softballs = softball
 30 Bags = bag
 30 Bats = baseball bats, bat, demarini
@@ -1806,13 +1806,13 @@ I Ice Pops | 🍭
 10 Outshine
 10 Bomb Pop
 10 Good Humor
-30 Fudgsicle
-30 Creamsicle
-30 Kool-Aid = kool aid
-30 Jolly Rancher (lic)
-30 GoodPop
-30 Pedialyte
-30 Dole Whip = dole
+10 Fudgsicle
+10 Creamsicle
+10 Kool-Aid = kool aid
+10 Jolly Rancher (lic)
+10 GoodPop
+10 Pedialyte
+10 Dole Whip = dole
 30 La Michoacana = helados la michoacana
 30 Halo Top
 30 Mr. Freeze = mr freeze
@@ -1825,12 +1825,12 @@ I Baby Food | 🍼
 10 Happy Baby
 10 Earth's Best = earths best
 10 Plum Organics = plum
-30 Sprout
-30 Little Spoon
-30 Serenity Kids
-30 Cerebelly
-30 Yumi
-30 Parent's Choice (store) = parents choice
+10 Sprout
+10 Little Spoon
+10 Serenity Kids
+10 Cerebelly
+10 Yumi
+10 Parent's Choice (store) = parents choice
 30 Ella's Kitchen = ellas kitchen
 30 Heinz
 30 Kirkland (store)
@@ -1840,7 +1840,7 @@ I Baby Food | 🍼
 B Heineken | known for: beer
 V drinks, drink, alcohol, beverages, booze
 10 Beer = lager, heineken
-30 Non-Alcoholic Beer = 0.0, heineken zero, na beer, heineken 0.0
+10 Non-Alcoholic Beer = 0.0, heineken zero, na beer, heineken 0.0
 30 Heineken Silver = silver
 30 Merch = glasses, clothes, hats
 30 Amstel
@@ -1863,13 +1863,13 @@ I Washing Machines | 🫧
 10 Electrolux
 10 Bosch
 10 Frigidaire
-30 Miele
-30 Amana
-30 Haier
-30 Hotpoint
-30 Fisher & Paykel = fisher and paykel
-30 Beko
-30 Midea
+10 Miele
+10 Amana
+10 Haier
+10 Hotpoint
+10 Fisher & Paykel = fisher and paykel
+10 Beko
+10 Midea
 30 Insignia (store)
 30 Asko
 30 Blomberg
@@ -1890,19 +1890,19 @@ X mattel, hasbro, lego, legos, barbie, hot wheels, nerf, monopoly, play doh, pla
 10 Funko
 10 Squishmallows
 10 Spin Master = paw patrol
-30 Ty = beanie babies
-30 Build-A-Bear = build a bear
-30 Step2 = step 2
-30 Crayola
-30 Disney
-30 MGA = bratz, lol surprise, l.o.l. surprise
-30 Bandai = tamagotchi
-30 K'Nex = knex
-30 Radio Flyer
-30 Razor
-30 Magna-Tiles = magna tiles
-30 Nintendo
-30 Pokémon = pokemon
+10 Ty = beanie babies
+10 Build-A-Bear = build a bear
+10 Step2 = step 2
+10 Crayola
+10 Disney
+10 MGA = bratz, lol surprise, l.o.l. surprise
+10 Bandai = tamagotchi
+10 K'Nex = knex
+10 Radio Flyer
+10 Razor
+10 Magna-Tiles = magna tiles
+10 Nintendo
+10 Pokémon = pokemon
 30 Jakks Pacific = jakks
 30 Ravensburger
 30 Wham-O = wham o, frisbee

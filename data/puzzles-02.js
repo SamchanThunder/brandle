@@ -12,14 +12,14 @@ I Cars | 🚗
 10 Jeep
 10 BMW
 10 Mercedes-Benz = mercedes, benz
-30 Subaru
-30 Volkswagen = vw
-30 Mazda
-30 Dodge
-30 Audi
-30 Lexus
-30 GMC
-30 Ram
+10 Subaru
+10 Volkswagen = vw
+10 Mazda
+10 Dodge
+10 Audi
+10 Lexus
+10 GMC
+10 Ram
 30 Porsche
 30 Cadillac
 30 Volvo
@@ -81,10 +81,10 @@ B Lego | known for: plastic building bricks
 V toys, toy, plastic, kids stuff
 10 Building Sets = bricks, brick, sets, lego sets, legos, building blocks, blocks, kits
 10 Minifigures = minifigure, minifig, minifigs, figures, figurines
-30 Video Games = games, game, lego star wars, lego batman, lego fortnite
-30 Movies = movie, lego movie, film, films
-30 Duplo (sub) = duplo blocks
-30 Technic (sub) = lego technic
+10 Video Games = games, game, lego star wars, lego batman, lego fortnite
+10 Movies = movie, lego movie, film, films
+10 Duplo (sub) = duplo blocks
+10 Technic (sub) = lego technic
 30 TV Shows = shows, ninjago, cartoons, tv show
 30 Theme Parks (lic) = legoland, theme park, amusement park | Legoland is run by Merlin Entertainments under license
 30 Books = book, magazines, idea books
@@ -108,9 +108,9 @@ I Pizza | 🍕
 10 Papa John's = papa johns
 10 Little Caesars = little caesar
 10 DiGiorno
-30 Red Baron
-30 Totino's = totinos
-30 Tombstone
+10 Red Baron
+10 Totino's = totinos
+10 Tombstone
 30 Marco's = marcos
 30 Papa Murphy's = papa murphys
 30 Sbarro
@@ -157,14 +157,14 @@ V electronics, entertainment, gaming stuff
 10 Consoles = console, game console, switch, nintendo switch, wii, game boy, gameboy, ds, 3ds, nes, snes, gamecube, n64
 10 Video Games = game, games, mario, zelda, pokemon, smash bros, mario kart
 10 Controllers = controller, joycons, joy cons, wiimote, pro controller
-30 Amiibo = amiibo figures, figures, figurines
+10 Toys = toy, ultra hand, love tester
 30 Mobile Games = mobile game, app, apps, phone games
 30 Movies = movie, mario movie, film
 30 Plush (lic) = plushies, stuffed animals
 30 Clothing (lic) = clothes, shirts, hoodies
 60 Playing Cards = cards, hanafuda, card games, card game, trading cards | Nintendo was founded in 1889 to make hanafuda cards
 60 Theme Park (lic) = super nintendo world, theme parks, amusement park
-60 Toys (disc) = toy, ultra hand, love tester
+10 Amiibo = amiibo figures, figures, figurines
 60 Cardboard Kits = labo, cardboard, nintendo labo
 85 Alarm Clock = alarmo, clock, alarm clocks | Alarmo, released in 2024
 85 Instant Rice (disc) = rice, instant food, food
@@ -177,17 +177,17 @@ I Ice Cream | 🍦
 10 Blue Bell
 10 Baskin-Robbins = baskin robbins
 10 Dairy Queen = dq
-30 Tillamook
-30 Talenti
-30 Halo Top
-30 Edy's = edys, dreyers, dreyer's
-30 Blue Bunny
-30 Cold Stone = cold stone creamery
-30 Turkey Hill
-30 Klondike
-30 Good Humor
-30 Drumstick
-30 Magnum
+10 Tillamook
+10 Talenti
+10 Halo Top
+10 Edy's = edys, dreyers, dreyer's
+10 Blue Bunny
+10 Cold Stone = cold stone creamery
+10 Turkey Hill
+10 Klondike
+10 Good Humor
+10 Drumstick
+10 Magnum
 30 Friendly's = friendlys
 30 Carvel
 30 Dippin' Dots = dippin dots
@@ -218,10 +218,10 @@ I Ice Cream | 🍦
 I Batteries | 🔋
 10 Duracell
 10 Energizer
-30 Rayovac
-30 Panasonic
-30 DeWalt
-30 Milwaukee
+10 Rayovac
+10 Panasonic
+10 DeWalt
+10 Milwaukee
 30 Eveready
 30 Ryobi
 30 DieHard
@@ -259,11 +259,11 @@ X movies, movie, films, film, tv shows, tv show, shows, show, cartoons, cartoon,
 10 Toys = toy, plush, plushies, stuffed animals, dolls, action figures
 10 Clothing = clothes, shirts, t shirts, hoodies, apparel, pajamas
 10 Mickey Ears = ears, mouse ears, ear hats
-30 Costumes = costume, princess dresses, halloween costumes
-30 Cruises = cruise, cruise ships, cruise ship, disney cruise line, ships
-30 Hotels = hotel, resorts, resort
-30 Video Games = games, video game
-30 Books = book, storybooks
+10 Costumes = costume, princess dresses, halloween costumes
+10 Cruises = cruise, cruise ships, cruise ship, disney cruise line, ships
+10 Hotels = hotel, resorts, resort
+10 Video Games = games, video game
+10 Books = book, storybooks
 30 Pins = pin, trading pins, enamel pins
 30 Music = records, albums, soundtracks, cds, hollywood records
 30 Comic Books = comics, marvel comics, comic
@@ -284,8 +284,8 @@ X movies, movie, films, film, tv shows, tv show, shows, show, cartoons, cartoon,
 I Ketchup | 🍅
 10 Heinz
 10 Hunt's = hunts
-30 French's = frenchs
-30 Del Monte
+10 French's = frenchs
+10 Del Monte
 30 Great Value (store)
 30 Kirkland (store)
 30 Sir Kensington's = sir kensingtons
@@ -310,11 +310,11 @@ V electronics, devices, gadgets, entertainment, media, tech
 10 Video Games = games, game
 10 Headphones = headphone, earbuds, earphones
 10 Cameras = camera, alpha, cybershot, handycam, camcorder, camcorders
-30 Speakers = speaker, soundbar, soundbars
-30 Movies = movie, sony pictures, films, film, spider man
-30 Music = record label, records, sony music, albums
-30 Phones = phone, xperia, smartphones, smartphone
-30 Walkman (disc) = walkman, cassette player, discman, portable music player, mp3 player
+10 Speakers = speaker, soundbar, soundbars
+10 Movies = movie, sony pictures, films, film, spider man
+10 Music = record label, records, sony music, albums
+10 Phones = phone, xperia, smartphones, smartphone
+10 Walkman (disc) = walkman, cassette player, discman, portable music player, mp3 player
 30 Laptops (disc) = laptop, vaio, computers, computer
 30 Projectors = projector
 30 Blu-ray Players = blu ray, bluray, dvd players, dvd player
@@ -336,17 +336,17 @@ I Cookies | 🍪
 10 Pepperidge Farm
 10 Girl Scouts = girl scout cookies
 10 Crumbl
-30 Famous Amos
-30 Nilla = nilla wafers
-30 Biscoff = lotus, lotus biscoff
-30 Nutter Butter
-30 Pillsbury
-30 Toll House = nestle toll house
-30 Mrs. Fields = mrs fields
-30 Tate's = tates
-30 Milano (sub:Pepperidge Farm)
-30 Little Debbie
-30 Fig Newtons = newtons
+10 Famous Amos
+10 Nilla = nilla wafers
+10 Biscoff = lotus, lotus biscoff
+10 Nutter Butter
+10 Pillsbury
+10 Toll House = nestle toll house
+10 Mrs. Fields = mrs fields
+10 Tate's = tates
+10 Milano (sub:Pepperidge Farm)
+10 Little Debbie
+10 Fig Newtons = newtons
 30 Lofthouse
 30 Insomnia = insomnia cookies
 30 Archway
@@ -372,9 +372,9 @@ I Toothpaste | 🪥
 10 Colgate
 10 Crest
 10 Sensodyne
-30 Aquafresh
-30 Arm & Hammer = arm and hammer
-30 Tom's of Maine = toms of maine, toms
+10 Aquafresh
+10 Arm & Hammer = arm and hammer
+10 Tom's of Maine = toms of maine, toms
 30 Hello
 30 Close-Up = closeup
 30 Kirkland (store)
@@ -403,12 +403,12 @@ V candy, sweets, food, snacks, desserts, treats
 10 Chocolate Bars = chocolate, chocolate bar, hershey bar, milk chocolate
 10 Kisses = hershey kisses, kiss
 10 Reese's = reeses, peanut butter cups, reeses cups
-30 Kit Kat (lic) = kitkat | Hershey makes Kit Kat in the US under license from Nestlé
-30 Chocolate Syrup = syrup
-30 Baking Chips = chocolate chips, morsels, baking chocolate
-30 Cocoa Powder = cocoa
-30 Twizzlers = licorice
-30 Jolly Rancher = jolly ranchers, hard candy
+10 Kit Kat (lic) = kitkat | Hershey makes Kit Kat in the US under license from Nestlé
+10 Chocolate Syrup = syrup
+10 Baking Chips = chocolate chips, morsels, baking chocolate
+10 Cocoa Powder = cocoa
+10 Twizzlers = licorice
+10 Jolly Rancher = jolly ranchers, hard candy
 30 Almond Joy
 30 Mounds
 30 York = york peppermint patty, peppermint patties
@@ -435,10 +435,10 @@ I Laundry Detergent | 🧺
 10 Persil
 10 All
 10 Arm & Hammer = arm and hammer
-30 Purex
-30 OxiClean = oxi clean
-30 Seventh Generation
-30 Kirkland (store)
+10 Purex
+10 OxiClean = oxi clean
+10 Seventh Generation
+10 Kirkland (store)
 30 Great Value (store)
 30 Woolite
 30 Method
@@ -473,9 +473,9 @@ X coca cola, coke, diet coke, coke zero, pepsi, diet pepsi, sprite, fanta, mount
 10 Dr Pepper = doctor pepper, dr. pepper
 10 7UP = seven up
 10 A&W = a and w
-30 Canada Dry
-30 Sunkist
-30 Crush
+10 Canada Dry
+10 Sunkist
+10 Crush
 30 Olipop
 30 Jarritos
 30 Squirt
@@ -509,10 +509,10 @@ I Pickup Trucks | 🛻
 10 Toyota = tacoma, tundra
 10 GMC = sierra
 10 Dodge
-30 Nissan = frontier, titan
-30 Honda = ridgeline
-30 Jeep = gladiator
-30 Tesla = cybertruck
+10 Nissan = frontier, titan
+10 Honda = ridgeline
+10 Jeep = gladiator
+10 Tesla = cybertruck
 30 Rivian
 30 Hyundai = santa cruz
 30 Hummer
@@ -541,9 +541,9 @@ B John Deere | known for: tractors
 V machines, machinery, equipment, farm equipment, vehicles
 10 Tractors = tractor
 10 Lawn Mowers = mower, mowers, riding mower, lawn tractor, lawn tractors
-30 Combines = combine, combine harvester, harvester
-30 Toys (lic) = toy tractors, toy, ride on toys
-30 Clothing (lic) = hats, caps, hat, shirts, clothes
+10 Combines = combine, combine harvester, harvester
+10 Toys (lic) = toy tractors, toy, ride on toys
+10 Clothing (lic) = hats, caps, hat, shirts, clothes
 30 Construction Equipment = excavator, excavators, bulldozer, backhoe, loader, skid steer
 30 Gators = gator, utility vehicle, utv
 30 Boots (lic) = boot
@@ -567,8 +567,8 @@ I Power Tools | 🔧
 10 Black+Decker = black and decker
 10 Bosch
 10 Craftsman
-30 Ridgid
-30 Kobalt
+10 Ridgid
+10 Kobalt
 30 Porter-Cable = porter cable
 30 Hilti
 30 Skil
@@ -606,10 +606,10 @@ I Hot Sauce | 🌶️
 10 Sriracha = huy fong
 10 Tapatío = tapatio
 10 Valentina
-30 Texas Pete
-30 Louisiana = louisiana hot sauce
-30 Crystal
-30 Hot Ones = last dab, hot ones sauce
+10 Texas Pete
+10 Louisiana = louisiana hot sauce
+10 Crystal
+10 Hot Ones = last dab, hot ones sauce
 30 El Yucateco
 30 Truff
 30 Melinda's = melindas
@@ -656,10 +656,10 @@ I Pens | 🖊️
 10 Sharpie
 10 Uni-ball = uniball, uni
 10 Pentel
-30 Zebra
-30 Parker
-30 Expo
-30 Crayola
+10 Zebra
+10 Parker
+10 Expo
+10 Crayola
 30 Cross
 30 Montblanc
 30 Sakura = gelly roll
@@ -696,7 +696,7 @@ X bulldozer, bulldozers, excavator, excavators, construction equipment, heavy eq
 10 Boots = boot, work boots, shoes, cat boots, footwear
 10 Clothing (lic) = clothes, shirts, hats, hat, hoodies, apparel, workwear
 10 Toys = toy, toy trucks, die cast, diecast
-30 Engines = engine, diesel engines
+10 Engines = engine, diesel engines
 30 Generators = generator
 30 Work Gloves (lic) = gloves
 30 Backpacks (lic) = backpack, bags, luggage
@@ -718,11 +718,11 @@ I TVs | 📺
 10 TCL
 10 Vizio
 10 Hisense
-30 Insignia (store)
-30 Panasonic
-30 Sharp
-30 Toshiba
-30 Roku
+10 Insignia (store)
+10 Panasonic
+10 Sharp
+10 Toshiba
+10 Roku
 30 Philips
 30 Onn (store)
 30 Element
@@ -762,10 +762,10 @@ V software, tech, electronics, apps, programs
 10 Xbox = console, xbox one, xbox series x, game console
 10 Office = word, excel, powerpoint, outlook, teams, microsoft office, microsoft 365
 10 Video Games = games, game, minecraft, halo, call of duty, forza
-30 Surface = laptops, laptop, tablets, tablet, computers, computer, pc
-30 Mice = mouse, computer mouse
-30 Keyboards = keyboard
-30 AI = copilot, chatbot, ai assistant
+10 Surface = laptops, laptop, tablets, tablet, computers, computer, pc
+10 Mice = mouse, computer mouse
+10 Keyboards = keyboard
+10 AI = copilot, chatbot, ai assistant
 30 Cloud = azure, cloud computing, servers
 30 Bing = search, search engine
 30 Skype (disc) = video calling
@@ -790,8 +790,8 @@ I Cameras | 📷
 10 Fujifilm = fuji
 10 Kodak
 10 Polaroid
-30 Instax (sub:Fujifilm)
-30 Panasonic = lumix
+10 Instax (sub:Fujifilm)
+10 Panasonic = lumix
 30 Olympus = om system
 30 Leica
 30 Pentax
@@ -834,14 +834,14 @@ I Candy Bars | 🍫
 10 3 Musketeers = three musketeers
 10 Butterfinger
 10 Crunch = nestle crunch
-30 Baby Ruth
-30 Almond Joy
-30 Mounds
-30 100 Grand = hundred grand
-30 Cadbury
-30 Toblerone
-30 Lindt
-30 Ghirardelli
+10 Baby Ruth
+10 Almond Joy
+10 Mounds
+10 100 Grand = hundred grand
+10 Cadbury
+10 Toblerone
+10 Lindt
+10 Ghirardelli
 30 Payday
 30 Heath
 30 Mars = mars bar
@@ -876,9 +876,9 @@ V electronics, photography, photos, photo stuff
 10 Film = camera film, photo film
 10 Cameras = camera, x100, xt5
 10 Instant Cameras = instax, instant camera
-30 Instant Film = instax film
-30 Disposable Cameras = disposable camera, quicksnap
-30 Lenses = lens, fujinon
+10 Instant Film = instax film
+10 Disposable Cameras = disposable camera, quicksnap
+10 Lenses = lens, fujinon
 30 Photo Printers = printer, printers
 30 Photo Prints = prints, photo printing, photo lab
 60 Copiers = photocopiers, photocopier, office printers
@@ -904,13 +904,13 @@ I Watches | ⌚
 10 Swatch
 10 G-Shock (sub:Casio) = gshock
 10 Garmin
-30 Samsung
-30 Fitbit
-30 Michael Kors
-30 Tag Heuer = tag
-30 Invicta
-30 Cartier
-30 Bulova
+10 Samsung
+10 Fitbit
+10 Michael Kors
+10 Tag Heuer = tag
+10 Invicta
+10 Cartier
+10 Bulova
 30 Movado
 30 Tissot
 30 Breitling
@@ -949,7 +949,7 @@ I Video Game Consoles | 🎮 | that isn't Sony, Microsoft or Nintendo
 X sony, playstation, ps5, ps4, microsoft, xbox, nintendo, switch, wii, game boy, gameboy, ds
 10 Sega = genesis, dreamcast, saturn, game gear
 10 Atari = jaguar
-30 Valve = steam deck, steam
+10 Valve = steam deck, steam
 30 Asus = rog ally
 30 Lenovo = legion go
 60 Nvidia = shield
@@ -985,17 +985,17 @@ I Coffee | ☕
 10 Maxwell House
 10 Nescafé = nescafe
 10 Keurig
-30 Peet's = peets
-30 Lavazza
-30 Tim Hortons = tims
-30 McCafé = mccafe, mcdonalds
-30 Nespresso
-30 Illy
-30 Caribou
-30 Café Bustelo = cafe bustelo, bustelo
-30 Green Mountain
-30 Kirkland (store)
-30 Dutch Bros
+10 Peet's = peets
+10 Lavazza
+10 Tim Hortons = tims
+10 McCafé = mccafe, mcdonalds
+10 Nespresso
+10 Illy
+10 Caribou
+10 Café Bustelo = cafe bustelo, bustelo
+10 Green Mountain
+10 Kirkland (store)
+10 Dutch Bros
 30 Death Wish
 30 Eight O'Clock = eight oclock
 30 Seattle's Best = seattles best
@@ -1033,10 +1033,10 @@ V toys, toy, kids stuff
 10 Barbie Dolls = barbie, barbies, dolls, doll, ken
 10 Hot Wheels = toy cars, die cast cars, diecast, cars
 10 Uno = card games, card game
-30 Fisher-Price = fisher price, baby toys
-30 Board Games = games, scrabble, pictionary, apples to apples, board game
-30 Matchbox
-30 American Girl = american girl dolls
+10 Fisher-Price = fisher price, baby toys
+10 Board Games = games, scrabble, pictionary, apples to apples, board game
+10 Matchbox
+10 American Girl = american girl dolls
 30 Polly Pocket
 30 Monster High
 30 Movies = movie, barbie movie, films
@@ -1062,11 +1062,11 @@ I Potato Chips | 🥔
 10 Doritos
 10 Cheetos
 10 Tostitos
-30 Cape Cod
-30 Utz
-30 Sun Chips = sunchips
-30 Fritos
-30 Takis
+10 Cape Cod
+10 Utz
+10 Sun Chips = sunchips
+10 Fritos
+10 Takis
 30 Wise
 30 Herr's = herrs
 30 Miss Vickie's = miss vickies
@@ -1107,11 +1107,11 @@ I Bicycles | 🚲
 10 Giant
 10 Cannondale
 10 Mongoose
-30 Raleigh
-30 Diamondback
-30 GT
-30 Rad Power = rad, radpower
-30 Peloton | Stationary, but it counts
+10 Raleigh
+10 Diamondback
+10 GT
+10 Rad Power = rad, radpower
+10 Peloton | Stationary, but it counts
 30 Santa Cruz
 30 Scott
 30 Bianchi
@@ -1160,9 +1160,9 @@ V office supplies, stationery, plastic stuff, school supplies
 10 Pens = pen, ballpoint, ballpoint pens
 10 Lighters = lighter
 10 Razors = razor, disposable razors, shavers
-30 Mechanical Pencils = pencils, pencil
-30 Highlighters = highlighter
-30 Markers = marker, permanent markers
+10 Mechanical Pencils = pencils, pencil
+10 Highlighters = highlighter
+10 Markers = marker, permanent markers
 30 Correction Tape = wite out, white out, correction fluid, wite-out
 30 Colored Pencils = colored pencil
 30 Crayons = crayon
@@ -1180,10 +1180,10 @@ I Sunglasses | 🕶️
 10 Oakley
 10 Maui Jim
 10 Costa = costa del mar
-30 Gucci
-30 Prada
-30 Warby Parker = warby
-30 Quay
+10 Gucci
+10 Prada
+10 Warby Parker = warby
+10 Quay
 30 Persol
 30 Smith
 30 Foster Grant
@@ -1222,10 +1222,10 @@ V stuff, gear, sportswear stuff, products
 X sneakers, sneaker, shoes, shoe, cleats, slides, sandals, flip flops, socks, sock, boots, running shoes, basketball shoes, jordans, air jordans, air max, air force 1, dunks, footwear, golf shoes, trainers, skates
 10 Clothing = clothes, shirts, shirt, t shirts, shorts, hoodies, hoodie, apparel, jerseys, jersey, jackets, jacket, leggings, pants, sweatpants, joggers
 10 Hats = hat, cap, caps, headbands, headband, beanies
-30 Sports Bras = sports bra
-30 Backpacks = backpack, bags, bag, duffel bag, gym bag
-30 Basketballs = basketball, balls, ball
-30 Soccer Balls = soccer ball, footballs, football
+10 Sports Bras = sports bra
+10 Backpacks = backpack, bags, bag, duffel bag, gym bag
+10 Basketballs = basketball, balls, ball
+10 Soccer Balls = soccer ball, footballs, football
 30 Gloves = football gloves, glove
 30 Water Bottles = water bottle, bottle
 30 Shin Guards = shin guard
@@ -1248,11 +1248,11 @@ I Shampoo | 🧴
 10 TRESemmé = tresemme
 10 Garnier = fructis
 10 L'Oréal = loreal
-30 Johnson's = johnsons, johnsons baby
-30 OGX
-30 Aussie
-30 Neutrogena
-30 Paul Mitchell
+10 Johnson's = johnsons, johnsons baby
+10 OGX
+10 Aussie
+10 Neutrogena
+10 Paul Mitchell
 30 Redken
 30 VO5 = v05
 30 Olaplex
@@ -1292,7 +1292,7 @@ B Volkswagen | known for: cars
 V vehicles, vehicle, transportation, automotive
 10 Cars = car, beetle, bug, golf, jetta, passat, tiguan, atlas, suv, suvs
 10 Vans = van, bus, microbus, camper van, vw bus, id buzz, westfalia
-30 Electric Cars = ev, evs, id4, electric vehicle
+10 Electric Cars = ev, evs, id4, electric vehicle
 30 Car Parts = parts, auto parts, spare parts
 30 Sports Cars = supercars, lamborghini, porsche, bentley | VW Group owns them all
 30 Merch (lic) = clothes, toys, models, model cars
@@ -1311,20 +1311,20 @@ I Jeans | 👖
 10 Gap
 10 Old Navy
 10 American Eagle = ae
-30 Diesel
-30 Calvin Klein = ck
-30 True Religion
-30 Abercrombie = abercrombie and fitch
-30 Hollister
-30 7 For All Mankind = seven for all mankind
-30 Lucky Brand = lucky
-30 Guess
-30 Tommy Hilfiger = tommy
-30 Ralph Lauren = polo
-30 Madewell
-30 Uniqlo
-30 Zara
-30 H&M = h and m
+10 Diesel
+10 Calvin Klein = ck
+10 True Religion
+10 Abercrombie = abercrombie and fitch
+10 Hollister
+10 7 For All Mankind = seven for all mankind
+10 Lucky Brand = lucky
+10 Guess
+10 Tommy Hilfiger = tommy
+10 Ralph Lauren = polo
+10 Madewell
+10 Uniqlo
+10 Zara
+10 H&M = h and m
 30 Silver Jeans = silver
 30 Carhartt
 30 AG
@@ -1361,9 +1361,9 @@ I Peanut Butter | 🥜
 10 Skippy = skipy
 10 Peter Pan
 10 Smucker's = smuckers
-30 Great Value (store)
-30 Kirkland (store)
-30 Justin's = justins
+10 Great Value (store)
+10 Kirkland (store)
+10 Justin's = justins
 30 Trader Joe's (store) = trader joes
 30 PB2
 30 365 (store) = whole foods 365
@@ -1395,8 +1395,8 @@ B Porsche | known for: sports cars
 V vehicles, vehicle, transportation, luxury stuff
 10 Sports Cars = car, cars, 911, cayman, boxster, sports car
 10 SUVs = suv, cayenne, macan
-30 Electric Cars = taycan, ev, electric car
-30 Race Cars = race car, racing cars
+10 Electric Cars = taycan, ev, electric car
+10 Race Cars = race car, racing cars
 30 Clothing (lic) = clothes, jackets, hats
 30 Sunglasses = porsche design, eyewear, glasses
 30 Watches = watch
@@ -1417,13 +1417,13 @@ I Mattresses | 🛏️
 10 Purple
 10 Simmons
 10 Sleep Number
-30 Saatva
-30 Nectar
-30 Beautyrest (sub:Simmons)
-30 Tuft & Needle = tuft and needle
-30 Leesa
-30 Helix
-30 Zinus
+10 Saatva
+10 Nectar
+10 Beautyrest (sub:Simmons)
+10 Tuft & Needle = tuft and needle
+10 Leesa
+10 Helix
+10 Zinus
 30 Avocado
 30 Stearns & Foster = stearns and foster
 30 DreamCloud
@@ -1471,12 +1471,12 @@ X mcdonalds, mcdonald's, burger king, bk, wendys, wendy's, big mac, whopper
 10 Carl's Jr. = carls jr
 10 Hardee's = hardees
 10 Culver's = culvers
-30 White Castle
-30 Red Robin
-30 Smashburger
-30 Checkers = rallys, rally's
-30 Steak 'n Shake = steak n shake
-30 Dairy Queen = dq
+10 White Castle
+10 Red Robin
+10 Smashburger
+10 Checkers = rallys, rally's
+10 Steak 'n Shake = steak n shake
+10 Dairy Queen = dq
 30 Freddy's = freddys
 30 Fuddruckers
 30 Krystal

@@ -6,7 +6,7 @@ const dataDir = path.join(__dirname, '..', 'data');
 let warnings = [];
 const origWarn = console.warn;
 console.warn = (...a) => warnings.push(a.join(' '));
-fs.readdirSync(dataDir).filter(f => /^(puzzles|more)-\d+\.js$/.test(f)).sort().forEach(f => require(path.join(dataDir, f)));
+fs.readdirSync(dataDir).filter(f => /^(puzzles|more)-[a-z0-9]+\.js$/.test(f)).sort().forEach(f => require(path.join(dataDir, f)));
 const B = require('../js/data.js');
 const days = B.loadPuzzles();
 console.warn = origWarn;

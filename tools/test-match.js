@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 global.window = globalThis;
 const dir = path.join(__dirname, '..', 'data');
-fs.readdirSync(dir).filter(f => /^(puzzles|more)-\d+\.js$/.test(f)).sort().forEach(f => require(path.join(dir, f)));
+fs.readdirSync(dir).filter(f => /^(puzzles|more)-[a-z0-9]+\.js$/.test(f)).sort().forEach(f => require(path.join(dir, f)));
 const B = require('../js/data.js');
 B.loadPuzzles();
 const find = name => { for (const d of B.puzzles) for (const r of d.rounds) if (r.name === name) return r; throw new Error('no round ' + name); };

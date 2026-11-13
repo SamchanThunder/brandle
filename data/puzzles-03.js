@@ -8,13 +8,13 @@ I Vacuum Cleaners | 🧹
 10 Roomba = irobot
 10 Dirt Devil
 10 Eureka
-30 Kirby
-30 Black+Decker = black and decker, dustbuster
-30 Miele
-30 Oreck
-30 Electrolux
-30 Samsung
-30 LG
+10 Kirby
+10 Black+Decker = black and decker, dustbuster
+10 Miele
+10 Oreck
+10 Electrolux
+10 Samsung
+10 LG
 30 Roborock
 30 Eufy
 30 Shop-Vac = shop vac, shopvac
@@ -44,13 +44,13 @@ V food, fast food, meals, menu items
 10 Mashed Potatoes = mashed potatoes and gravy, gravy, potatoes
 10 Biscuits = biscuit
 10 Chicken Tenders = tenders, strips, chicken strips
-30 Popcorn Chicken = nuggets, chicken nuggets
-30 Coleslaw = cole slaw, slaw
-30 Mac and Cheese = mac n cheese
-30 Fries = french fries, secret recipe fries
-30 Pot Pies = pot pie, chicken pot pie
-30 Famous Bowls = bowl, bowls, famous bowl
-30 Drinks = soda, lemonade, sweet tea
+10 Popcorn Chicken = nuggets, chicken nuggets
+10 Coleslaw = cole slaw, slaw
+10 Mac and Cheese = mac n cheese
+10 Fries = french fries, secret recipe fries
+10 Pot Pies = pot pie, chicken pot pie
+10 Famous Bowls = bowl, bowls, famous bowl
+10 Drinks = soda, lemonade, sweet tea
 30 Corn = corn on the cob
 30 Desserts = cake, cookies, chocolate chip cake, dessert
 30 Potato Wedges (disc) = wedges
@@ -71,15 +71,15 @@ I Chewing Gum | 🫧
 10 Hubba Bubba
 10 Bubblicious
 10 Big Red
-30 Dentyne
-30 Eclipse
-30 5 Gum = five gum, 5
-30 Ice Breakers
-30 Stride
-30 Mentos
-30 Bazooka
-30 Dubble Bubble
-30 Big League Chew
+10 Dentyne
+10 Eclipse
+10 5 Gum = five gum, 5
+10 Ice Breakers
+10 Stride
+10 Mentos
+10 Bazooka
+10 Dubble Bubble
+10 Big League Chew
 30 Freedent
 30 Bubble Yum
 30 Chiclets
@@ -105,12 +105,12 @@ I Motorcycles | 🏍️
 10 BMW
 10 Indian
 10 Triumph
-30 KTM
-30 Royal Enfield
-30 Aprilia
-30 Husqvarna
-30 Can-Am = can am
-30 Vespa
+10 KTM
+10 Royal Enfield
+10 Aprilia
+10 Husqvarna
+10 Can-Am = can am
+10 Vespa
 30 Moto Guzzi
 30 MV Agusta
 30 Zero
@@ -147,14 +147,14 @@ V electronics, appliances, devices, gadgets
 10 TVs = tv, television, oled tv
 10 Refrigerators = fridge, fridges, refrigerator
 10 Washing Machines = washer, washers, washing machine, dryer, dryers
-30 Monitors = monitor
-30 Laptops = laptop, gram, lg gram
-30 Air Conditioners = ac, air conditioner
-30 Dishwashers = dishwasher
-30 Microwaves = microwave
-30 Ovens = stove, stoves, range, oven
-30 Soundbars = soundbar, speakers, speaker
-30 Phones (disc) = phone, smartphone, smartphones | LG quit phones in 2021
+10 Monitors = monitor
+10 Laptops = laptop, gram, lg gram
+10 Air Conditioners = ac, air conditioner
+10 Dishwashers = dishwasher
+10 Microwaves = microwave
+10 Ovens = stove, stoves, range, oven
+10 Soundbars = soundbar, speakers, speaker
+10 Phones (disc) = phone, smartphone, smartphones | LG quit phones in 2021
 30 Vacuums = vacuum, vacuum cleaner
 30 Headphones = earbuds, tone free
 30 Projectors = projector
@@ -172,9 +172,9 @@ I Pretzels | 🥨
 10 Rold Gold
 10 Snyder's of Hanover = snyders, snyder's
 10 Auntie Anne's = auntie annes
-30 Utz
-30 Dot's = dots, dot's homestyle pretzels
-30 Herr's = herrs
+10 Utz
+10 Dot's = dots, dot's homestyle pretzels
+10 Herr's = herrs
 30 Wetzel's = wetzels
 30 SuperPretzel = super pretzel
 30 Unique = unique pretzels, unique splits
@@ -203,12 +203,12 @@ V electronics, tech, devices, gadgets, accessories
 X iphone, iphones, phone, phones, smartphone, mac, macs, macbook, macbook air, macbook pro, imac, mac mini, mac pro, computer, computers, laptop, laptops, desktop, ipad, ipads, tablet, tablets
 10 Watches = apple watch, watch, smartwatch
 10 AirPods = earbuds, headphones, airpods pro, airpods max, earphones
-30 Apple TV = streaming box, tv box
-30 Music = apple music, music streaming, itunes
-30 AirTags = airtag, trackers, tracker
-30 Chargers = charger, cables, cable, adapters, magsafe
-30 TV Shows = apple tv plus, shows, movies, ted lasso, apple tv+
-30 HomePod = speaker, speakers, smart speaker
+10 Apple TV = streaming box, tv box
+10 Music = apple music, music streaming, itunes
+10 AirTags = airtag, trackers, tracker
+10 Chargers = charger, cables, cable, adapters, magsafe
+10 TV Shows = apple tv plus, shows, movies, ted lasso, apple tv+
+10 HomePod = speaker, speakers, smart speaker
 30 Keyboards = keyboard, magic keyboard
 30 Mice = mouse, magic mouse
 30 Apple Pencil = pencil, stylus
@@ -235,12 +235,12 @@ I Yogurt | 🥛
 10 Oikos
 10 Fage
 10 Activia
-30 Siggi's = siggis
-30 Stonyfield
-30 Go-Gurt = gogurt
-30 Two Good
-30 Light + Fit = light and fit
-30 Danimals
+10 Siggi's = siggis
+10 Stonyfield
+10 Go-Gurt = gogurt
+10 Two Good
+10 Light + Fit = light and fit
+10 Danimals
 30 Brown Cow
 30 Kirkland (store)
 30 Great Value (store)
@@ -269,8 +269,8 @@ V vehicles, vehicle, transportation
 10 Trucks = truck, f150, f-150, pickup, ranger, maverick, super duty
 10 Cars = car, mustang, focus, fusion, taurus, model t, fiesta
 10 SUVs = suv, explorer, bronco, escape, expedition, edge
-30 Vans = van, transit, econoline
-30 Electric Vehicles = ev, lightning, mach e, electric car
+10 Vans = van, transit, econoline
+10 Electric Vehicles = ev, lightning, mach e, electric car
 30 Lincolns = lincoln, luxury cars
 30 Car Parts = parts, motorcraft
 30 Race Cars = race car, nascar, gt40
@@ -290,13 +290,13 @@ I Backpacks | 🎒
 10 Herschel
 10 Under Armour = under armor
 10 Vans
-30 Fjällräven Kånken = kanken
-30 Osprey
-30 L.L.Bean = llbean, ll bean
-30 Patagonia
-30 Eastpak
-30 SwissGear = swiss gear
-30 Samsonite
+10 Fjällräven Kånken = kanken
+10 Osprey
+10 L.L.Bean = llbean, ll bean
+10 Patagonia
+10 Eastpak
+10 SwissGear = swiss gear
+10 Samsonite
 30 Kipling
 30 Dakine
 30 Targus
@@ -337,12 +337,12 @@ I Microwaves | 📡
 10 Sharp
 10 Whirlpool
 10 Frigidaire
-30 Toshiba
-30 Hamilton Beach
-30 Galanz
-30 Black+Decker = black and decker
-30 Breville
-30 Insignia (store)
+10 Toshiba
+10 Hamilton Beach
+10 Galanz
+10 Black+Decker = black and decker
+10 Breville
+10 Insignia (store)
 30 Amana
 30 Farberware
 30 Kenmore
@@ -373,15 +373,15 @@ V toys, toy, kids stuff
 10 G.I. Joe = gi joe, action figures
 10 Mr. Potato Head = potato head
 10 Clue = cluedo
-30 Connect 4 = connect four
-30 Battleship
-30 Jenga
-30 Twister
-30 Candy Land
-30 Operation
-30 Trivial Pursuit
-30 Magic: The Gathering = magic the gathering, mtg, trading cards
-30 Dungeons & Dragons = dungeons and dragons, d&d, dnd
+10 Connect 4 = connect four
+10 Battleship
+10 Jenga
+10 Twister
+10 Candy Land
+10 Operation
+10 Trivial Pursuit
+10 Magic: The Gathering = magic the gathering, mtg, trading cards
+10 Dungeons & Dragons = dungeons and dragons, d&d, dnd
 30 Furby
 30 Baby Alive
 30 Littlest Pet Shop
@@ -402,8 +402,8 @@ I Typewriters | ⌨️
 10 IBM = selectric
 10 Olivetti
 10 Underwood
-30 Brother
-30 Olympia
+10 Brother
+10 Olympia
 30 Hermes
 30 Adler
 30 Remington Rand
@@ -427,10 +427,10 @@ X apple, iphone, iphones, samsung, galaxy, samsung galaxy
 10 Motorola = moto, razr
 10 OnePlus = one plus
 10 Nokia
-30 BlackBerry (disc) = blackberry
-30 LG (disc)
-30 Xiaomi
-30 Huawei
+10 BlackBerry (disc) = blackberry
+10 LG (disc)
+10 Xiaomi
+10 Huawei
 30 Sony = xperia
 30 Nothing
 30 Oppo
@@ -471,10 +471,10 @@ I Toilet Paper | 🧻
 10 Angel Soft
 10 Quilted Northern
 10 Kirkland (store)
-30 Great Value (store)
-30 Seventh Generation
-30 Up&Up (store) = up and up
-30 Member's Mark (store) = members mark
+10 Great Value (store)
+10 Seventh Generation
+10 Up&Up (store) = up and up
+10 Member's Mark (store) = members mark
 30 Who Gives a Crap
 30 Marcal
 30 Presto
@@ -515,12 +515,12 @@ I Tacos | 🌮
 10 Qdoba
 10 Taco Cabana
 10 Old El Paso
-30 Moe's = moes
-30 Taco John's = taco johns
-30 El Pollo Loco
-30 Torchy's = torchys
-30 Taco Bueno
-30 Rubio's = rubios
+10 Moe's = moes
+10 Taco John's = taco johns
+10 El Pollo Loco
+10 Torchy's = torchys
+10 Taco Bueno
+10 Rubio's = rubios
 30 Velvet Taco
 30 Ortega
 30 Baja Fresh
@@ -550,13 +550,13 @@ I Luggage | 🧳
 10 Travelpro
 10 Delsey
 10 American Tourister
-30 Calpak
-30 Monos
-30 Briggs & Riley = briggs and riley
-30 Béis = beis
-30 July
-30 Swiss Gear = swissgear
-30 Herschel
+10 Calpak
+10 Monos
+10 Briggs & Riley = briggs and riley
+10 Béis = beis
+10 July
+10 Swiss Gear = swissgear
+10 Herschel
 30 Vera Bradley
 30 Osprey
 30 Eagle Creek
@@ -603,12 +603,12 @@ I Drums & Cymbals | 🥁
 10 DW = drum workshop
 10 Gretsch
 10 Roland
-30 Sonor
-30 Mapex
-30 Sabian
-30 Alesis
-30 Remo
-30 Vic Firth
+10 Sonor
+10 Mapex
+10 Sabian
+10 Alesis
+10 Remo
+10 Vic Firth
 30 Paiste
 30 Meinl
 30 Premier
@@ -630,9 +630,9 @@ B McDonald's | known for: burgers & fries | that you can't eat or drink
 V stuff, things, products
 X burger, burgers, hamburger, hamburgers, big mac, big macs, cheeseburger, fries, french fries, nuggets, chicken nuggets, mcnuggets, mcflurry, shakes, shake, milkshakes, milkshake, coffee, mccafe, soda, sodas, happy meal, happy meals, mcmuffin, egg mcmuffin, pie, pies, apple pie, ice cream, sundae, mcrib, breakfast, hash browns, hashbrowns, salads, salad, wraps, sandwiches, sandwich, chicken, chicken sandwich, fish, filet o fish, drinks, drink, smoothies, cookies, pancakes, hotcakes, mcchicken, quarter pounder, food, meals
 10 Happy Meal Toys = toys, toy
-30 Gift Cards = gift card
-30 Plush = beanie babies, teenie beanie babies, stuffed animals
-30 Clothing (lic) = clothes, merch, hoodies, uniforms, shirts
+10 Gift Cards = gift card
+10 Plush = beanie babies, teenie beanie babies, stuffed animals
+10 Clothing (lic) = clothes, merch, hoodies, uniforms, shirts
 30 Playgrounds = playplace, play place, ball pit
 30 Collector Glasses = glasses, cups, mugs, cup
 30 Monopoly Pieces = monopoly, monopoly game, game pieces
@@ -647,12 +647,12 @@ I Donuts | 🍩
 10 Dunkin' = dunkin, dunkin donuts
 10 Krispy Kreme
 10 Tim Hortons = tims
-30 Entenmann's = entenmanns
-30 Hostess = donettes
-30 Little Debbie
-30 Duck Donuts
-30 Voodoo = voodoo doughnut
-30 Shipley = shipley do-nuts, shipleys
+10 Entenmann's = entenmanns
+10 Hostess = donettes
+10 Little Debbie
+10 Duck Donuts
+10 Voodoo = voodoo doughnut
+10 Shipley = shipley do-nuts, shipleys
 30 Winchell's = winchells
 30 Daylight Donuts = daylight
 30 Top Pot
@@ -680,10 +680,10 @@ V electronics, appliances, devices, gadgets
 10 Microwaves = microwave
 10 Cameras = camera, lumix
 10 Batteries = battery, eneloop, ev batteries
-30 Electric Shavers = shaver, razors, razor
-30 Hair Dryers = hair dryer, blow dryer
-30 Headphones = earbuds
-30 Rice Cookers = rice cooker
+10 Electric Shavers = shaver, razors, razor
+10 Hair Dryers = hair dryer, blow dryer
+10 Headphones = earbuds
+10 Rice Cookers = rice cooker
 30 Air Conditioners = ac, air conditioner
 30 Washing Machines = washer, washing machine
 30 Laptops = laptop, toughbook
@@ -707,9 +707,9 @@ I Golf Clubs | 🏌️
 10 Titleist
 10 Ping
 10 Cobra
-30 Mizuno
-30 Wilson
-30 Cleveland
+10 Mizuno
+10 Wilson
+10 Cleveland
 30 PXG
 30 Srixon
 30 Odyssey (sub:Callaway)
@@ -743,13 +743,13 @@ I Deodorant | 🧴
 10 Right Guard
 10 Speed Stick = lady speed stick
 10 Native
-30 Arm & Hammer = arm and hammer
-30 Gillette
-30 Suave
-30 Dr. Squatch = dr squatch, squatch
-30 Tom's of Maine = toms
-30 Schmidt's = schmidts
-30 Mitchum
+10 Arm & Hammer = arm and hammer
+10 Gillette
+10 Suave
+10 Dr. Squatch = dr squatch, squatch
+10 Tom's of Maine = toms
+10 Schmidt's = schmidts
+10 Mitchum
 30 Ban
 30 Rexona
 30 Sure
@@ -769,7 +769,7 @@ I Deodorant | 🧴
 B Guinness | known for: stout beer
 V drinks, drink, alcohol, beverages, booze
 10 Beer = stout, guinness draught, draught, extra stout, pints
-30 Non-Alcoholic Beer = guinness 0, guinness zero, na beer
+10 Non-Alcoholic Beer = guinness 0, guinness zero, na beer
 30 Merch = clothes, pint glasses, glasses, hats
 30 Blonde = lager, guinness blonde, blonde lager
 30 Storehouse Tours = guinness storehouse, museum, tours
@@ -784,10 +784,10 @@ I Ceiling Fans | 🌀
 10 Hampton Bay
 10 Minka-Aire = minka aire, minka
 10 Casablanca
-30 Harbor Breeze
-30 Westinghouse
-30 Emerson
-30 Fanimation
+10 Harbor Breeze
+10 Westinghouse
+10 Emerson
+10 Fanimation
 30 Monte Carlo
 30 Craftmade
 30 Kichler
@@ -812,10 +812,10 @@ X kfc, kentucky fried chicken, popeyes, chick fil a, chick-fil-a, chickfila
 10 Wingstop
 10 Zaxby's = zaxbys
 10 Buffalo Wild Wings = bww, b dubs
-30 Dave's Hot Chicken = daves hot chicken
-30 Jollibee
-30 Slim Chickens
-30 El Pollo Loco
+10 Dave's Hot Chicken = daves hot chicken
+10 Jollibee
+10 Slim Chickens
+10 El Pollo Loco
 30 Bonchon
 30 Hooters
 30 Golden Chick
@@ -849,16 +849,16 @@ I Milk | 🥛
 10 Organic Valley
 10 Silk
 10 Oatly
-30 Dean's = deans
-30 Borden
-30 Almond Breeze
-30 Kirkland (store)
-30 Great Value (store)
-30 Darigold
-30 Hood
-30 Prairie Farms
-30 Planet Oat
-30 Califia = califia farms
+10 Dean's = deans
+10 Borden
+10 Almond Breeze
+10 Kirkland (store)
+10 Great Value (store)
+10 Darigold
+10 Hood
+10 Prairie Farms
+10 Planet Oat
+10 Califia = califia farms
 30 Garelick Farms = garelick
 30 Kemps
 30 Shamrock Farms = shamrock
@@ -881,7 +881,7 @@ B Hyundai | known for: cars
 V vehicles, vehicle, machines, transportation
 10 Cars = car, elantra, sonata, tucson, santa fe, ioniq, kona, suv, suvs
 10 Electric Cars = ev, evs, electric car
-30 Genesis = luxury cars
+10 Genesis = luxury cars
 30 Pickup Trucks = santa cruz, pickup, truck
 30 Buses = bus
 60 Semi Trucks = semi, xcient, hydrogen trucks
@@ -906,20 +906,20 @@ I Perfume | 🌸
 10 Tom Ford
 10 Bath & Body Works = bath and body works
 10 Victoria's Secret = victorias secret
-30 Viktor & Rolf = viktor and rolf
-30 Lancôme = lancome
-30 Jo Malone
-30 Prada
-30 Armani
-30 Dolce & Gabbana = dolce and gabbana, d&g
-30 Ariana Grande
-30 Le Labo
-30 Burberry
-30 Paco Rabanne = rabanne
-30 Jean Paul Gaultier = gaultier
-30 Hugo Boss
-30 Ralph Lauren
-30 Axe
+10 Viktor & Rolf = viktor and rolf
+10 Lancôme = lancome
+10 Jo Malone
+10 Prada
+10 Armani
+10 Dolce & Gabbana = dolce and gabbana, d&g
+10 Ariana Grande
+10 Le Labo
+10 Burberry
+10 Paco Rabanne = rabanne
+10 Jean Paul Gaultier = gaultier
+10 Hugo Boss
+10 Ralph Lauren
+10 Axe
 30 Byredo
 30 Maison Margiela = margiela
 30 Creed
@@ -951,10 +951,10 @@ I Blenders | 🥤
 10 KitchenAid
 10 Hamilton Beach
 10 Magic Bullet
-30 Cuisinart
-30 Breville
-30 Black+Decker = black and decker
-30 BlendJet
+10 Cuisinart
+10 Breville
+10 Black+Decker = black and decker
+10 BlendJet
 30 Waring
 30 Bella
 30 Instant
@@ -989,11 +989,11 @@ I Kayaks | 🛶
 10 Pelican
 10 Perception
 10 Lifetime
-30 Wilderness Systems
-30 Hobie
-30 Sun Dolphin
-30 Intex
-30 Ozark Trail (store)
+10 Wilderness Systems
+10 Hobie
+10 Sun Dolphin
+10 Intex
+10 Ozark Trail (store)
 30 Bote
 30 Advanced Elements
 30 Jackson
@@ -1019,9 +1019,9 @@ V stuff, things, products, tech
 X car, cars, ev, evs, electric car, electric cars, model 3, model s, model x, model y, roadster, sedan, suv, cybercab, robotaxi
 10 Solar Panels = solar, solar panel
 10 Batteries = battery, powerwall, powerwalls
-30 Chargers = charger, supercharger, superchargers, wall connector
-30 Cybertruck = truck, pickup, pickup truck
-30 Solar Roofs = solar roof, roof, roofs, solar shingles
+10 Chargers = charger, supercharger, superchargers, wall connector
+10 Cybertruck = truck, pickup, pickup truck
+10 Solar Roofs = solar roof, roof, roofs, solar shingles
 30 Semi Trucks = semi, tesla semi
 30 Clothing = clothes, merch, hats, hoodies
 30 Robots = robot, optimus, humanoid robot
@@ -1044,17 +1044,17 @@ I Cheese | 🧀
 10 Velveeta
 10 Babybel
 10 Laughing Cow
-30 Boar's Head = boars head
-30 Land O'Lakes = land o lakes
-30 Kerrygold
-30 Galbani
-30 Cracker Barrel | The cheese has nothing to do with the restaurant
-30 Président = president
-30 BelGioioso = belgioioso
-30 Horizon
-30 Organic Valley
-30 Kirkland (store)
-30 Great Value (store)
+10 Boar's Head = boars head
+10 Land O'Lakes = land o lakes
+10 Kerrygold
+10 Galbani
+10 Cracker Barrel | The cheese has nothing to do with the restaurant
+10 Président = president
+10 BelGioioso = belgioioso
+10 Horizon
+10 Organic Valley
+10 Kirkland (store)
+10 Great Value (store)
 30 Polly-O = polly o
 30 Frigo
 30 Borden
@@ -1081,10 +1081,10 @@ V electronics, appliances, devices, gadgets
 10 Light Bulbs = bulbs, lights, hue, smart bulbs, lighting
 10 Electric Shavers = shaver, shavers, razors, razor, norelco
 10 Electric Toothbrushes = toothbrush, sonicare
-30 TVs (lic) = tv, television, ambilight
-30 Air Fryers = air fryer, airfryer
-30 Coffee Machines = espresso machine, coffee maker
-30 Hair Dryers = hair dryer
+10 TVs (lic) = tv, television, ambilight
+10 Air Fryers = air fryer, airfryer
+10 Coffee Machines = espresso machine, coffee maker
+10 Hair Dryers = hair dryer
 30 Headphones
 30 Blenders = blender
 30 Irons = iron, steam iron
@@ -1106,15 +1106,15 @@ I Boots | 🥾
 10 Wolverine
 10 Blundstone = blundstones
 10 Sorel
-30 Frye
-30 Columbia
-30 Merrell
-30 Keen
-30 Danner
-30 Thorogood
-30 Justin = justin boots
-30 Ariat
-30 L.L.Bean = llbean, bean boots
+10 Frye
+10 Columbia
+10 Merrell
+10 Keen
+10 Danner
+10 Thorogood
+10 Justin = justin boots
+10 Ariat
+10 L.L.Bean = llbean, bean boots
 30 Lucchese
 30 Tony Lama
 30 Muck
@@ -1134,7 +1134,7 @@ I Boots | 🥾
 30 Durango
 100 Xtratuf = xtra tuf | In Alaska, XtraTuf rubber deck boots are so common among fishermen that they are nicknamed "Sitka sneakers."
 60 Nokian (sub:Nokia) = nokia
-30 Hunter = hunter boots
+10 Hunter = hunter boots
 
 I Candy | 🍬
 10 Skittles
@@ -1151,20 +1151,20 @@ I Candy | 🍬
 10 Life Savers = lifesavers
 10 Trolli
 10 Warheads
-30 Mike and Ike
-30 Hot Tamales
-30 Jelly Belly
-30 Smarties
-30 SweeTarts = sweet tarts
-30 Pez
-30 Dum Dums
-30 Tootsie Roll = tootsie
-30 Blow Pop
-30 Ring Pop
-30 Push Pop
-30 Werther's = werthers
-30 Brach's = brachs
-30 Hi-Chew = hichew
+10 Mike and Ike
+10 Hot Tamales
+10 Jelly Belly
+10 Smarties
+10 SweeTarts = sweet tarts
+10 Pez
+10 Dum Dums
+10 Tootsie Roll = tootsie
+10 Blow Pop
+10 Ring Pop
+10 Push Pop
+10 Werther's = werthers
+10 Brach's = brachs
+10 Hi-Chew = hichew
 30 Lemonheads
 30 Now and Later
 30 Fun Dip
@@ -1187,7 +1187,7 @@ I Candy | 🍬
 B Zippo | known for: lighters
 V stuff, accessories, gifts, gear
 10 Lighters = lighter, windproof lighter
-30 Lighter Fluid = fluid, butane
+10 Lighter Fluid = fluid, butane
 30 Candle Lighters = utility lighter, candle lighter, long lighter
 30 Hand Warmers = handwarmer, handwarmers, hand warmer
 30 Knives = knife, pocket knife, pocket knives
@@ -1204,10 +1204,10 @@ I Glue | 🧴
 10 Gorilla = gorilla glue
 10 Krazy Glue = crazy glue
 10 Loctite
-30 Super Glue = super glue corp
-30 E6000
-30 J-B Weld = jb weld
-30 Scotch
+10 Super Glue = super glue corp
+10 E6000
+10 J-B Weld = jb weld
+10 Scotch
 30 Titebond
 30 Liquid Nails
 30 Aleene's = aleenes
@@ -1230,15 +1230,15 @@ X budweiser, bud light, bud, coors, coors light, miller, miller lite, miller hig
 10 Stella Artois = stella
 10 Guinness
 10 Blue Moon
-30 Pabst = pbr, pabst blue ribbon
-30 Yuengling
-30 Samuel Adams = sam adams
-30 Dos Equis
-30 Busch = busch light
-30 Natural Light = natty light, natty
-30 Keystone = keystone light
-30 Pacifico
-30 Sierra Nevada
+10 Pabst = pbr, pabst blue ribbon
+10 Yuengling
+10 Samuel Adams = sam adams
+10 Dos Equis
+10 Busch = busch light
+10 Natural Light = natty light, natty
+10 Keystone = keystone light
+10 Pacifico
+10 Sierra Nevada
 30 Lagunitas
 30 Shiner
 30 Rolling Rock
@@ -1293,13 +1293,13 @@ I Bread | 🍞
 10 Oroweat
 10 Thomas' = thomas, thomas english muffins
 10 King's Hawaiian = kings hawaiian
-30 Martin's = martins, martins potato rolls
-30 Ezekiel = food for life
-30 Sunbeam | No relation to the appliances
-30 Mrs Baird's = mrs bairds
-30 Butternut
-30 Kirkland (store)
-30 Great Value (store)
+10 Martin's = martins, martins potato rolls
+10 Ezekiel = food for life
+10 Sunbeam | No relation to the appliances
+10 Mrs Baird's = mrs bairds
+10 Butternut
+10 Kirkland (store)
+10 Great Value (store)
 30 Home Pride
 30 Stroehmann
 30 Franz
@@ -1323,7 +1323,7 @@ V tools, appliances, stuff, gadgets
 10 Drills = drill, power drill, cordless drill
 10 Power Tools = saw, saws, sander, circular saw, jigsaw
 10 Dustbuster = handheld vacuum, vacuum, dustbusters
-30 Electric Screwdrivers = screwdriver
+10 Electric Screwdrivers = screwdriver
 30 Toasters = toaster, toaster oven
 30 Coffee Makers = coffee maker, coffee machine
 30 Blenders = blender
@@ -1345,13 +1345,13 @@ I Air Fryers | 🍟
 10 Instant = instant vortex, instant pot
 10 Chefman
 10 Dash
-30 Gourmia
-30 PowerXL = power xl
-30 Cuisinart
-30 Breville
-30 Bella
-30 Black+Decker = black and decker
-30 Emeril Lagasse = emeril
+10 Gourmia
+10 PowerXL = power xl
+10 Cuisinart
+10 Breville
+10 Bella
+10 Black+Decker = black and decker
+10 Emeril Lagasse = emeril
 30 Crux
 30 Kalorik
 30 Typhur
@@ -1379,21 +1379,21 @@ I Handbags | 👜
 10 Prada
 10 Chanel
 10 Hermès = hermes
-30 Dior
-30 Fendi
-30 Balenciaga
-30 Saint Laurent = ysl
-30 Tory Burch
-30 Marc Jacobs
-30 Bottega Veneta = bottega
-30 Celine
-30 Givenchy
-30 Valentino
-30 Burberry
-30 Longchamp
-30 Fossil
-30 Vera Bradley
-30 Dooney & Bourke = dooney
+10 Dior
+10 Fendi
+10 Balenciaga
+10 Saint Laurent = ysl
+10 Tory Burch
+10 Marc Jacobs
+10 Bottega Veneta = bottega
+10 Celine
+10 Givenchy
+10 Valentino
+10 Burberry
+10 Longchamp
+10 Fossil
+10 Vera Bradley
+10 Dooney & Bourke = dooney
 30 Guess
 30 Steve Madden
 30 Loewe
@@ -1415,7 +1415,7 @@ B Play-Doh | known for: modeling dough
 V toys, toy, crafts, kids stuff
 10 Modeling Dough = dough, play dough, playdough, clay, modeling clay, compound
 10 Playsets = sets, kits, kitchen set, fun factory, playset
-30 Tools = molds, cutters, extruder, stampers, rollers
+10 Tools = molds, cutters, extruder, stampers, rollers
 30 Slime
 30 Books = book
 30 Board Game = game, games
@@ -1430,9 +1430,9 @@ I Elevators | 🛗
 10 Schindler
 10 ThyssenKrupp = tk elevator, thyssen krupp
 10 Mitsubishi = mitsubishi electric
-30 Hitachi
-30 Fujitec
-30 Toshiba
+10 Hitachi
+10 Fujitec
+10 Toshiba
 30 Hyundai = hyundai elevator
 30 Stannah | Stairlifts too
 30 Savaria
@@ -1450,11 +1450,11 @@ X phone, phones, smartphone, smartphones, galaxy, tv, tvs, television, tablet, t
 10 Refrigerators = fridge, fridges, refrigerator
 10 Washing Machines = washer, washers, dryer, dryers, washing machine
 10 Earbuds = galaxy buds, headphones, buds
-30 Vacuums = vacuum, robot vacuum
-30 Microwaves = microwave
-30 Ovens = stove, range, oven
-30 Dishwashers = dishwasher
-30 Chargers = charger
+10 Vacuums = vacuum, robot vacuum
+10 Microwaves = microwave
+10 Ovens = stove, range, oven
+10 Dishwashers = dishwasher
+10 Chargers = charger
 30 Air Conditioners = ac, air conditioner
 30 Soundbars = soundbar, speakers, speaker
 30 Memory Chips = chips, ram, ssd, semiconductors, processors, memory
@@ -1482,15 +1482,15 @@ I Juice | 🧃
 10 Juicy Juice
 10 Hi-C = hic
 10 Sunny D = sunny delight
-30 Florida's Natural = floridas natural
-30 Dole
-30 Hawaiian Punch
-30 Apple & Eve = apple and eve
-30 Bolthouse Farms = bolthouse
-30 Langers
-30 Del Monte
-30 Suja
-30 Kirkland (store)
+10 Florida's Natural = floridas natural
+10 Dole
+10 Hawaiian Punch
+10 Apple & Eve = apple and eve
+10 Bolthouse Farms = bolthouse
+10 Langers
+10 Del Monte
+10 Suja
+10 Kirkland (store)
 30 Evolution Fresh
 30 Pom = pom wonderful
 30 Lakewood
@@ -1537,24 +1537,24 @@ I Makeup | 💄
 10 Urban Decay
 10 Too Faced
 10 Benefit
-30 Dior
-30 Chanel
-30 YSL = yves saint laurent
-30 Glossier
-30 Milani
-30 Rimmel
-30 Wet n Wild
-30 NARS
-30 Huda Beauty = huda
-30 Kylie Cosmetics = kylie
-30 Tarte
-30 Bobbi Brown
-30 Pat McGrath
-30 Laura Mercier
-30 Smashbox
-30 Morphe
-30 Anastasia = abh
-30 ColourPop = colourpop
+10 Dior
+10 Chanel
+10 YSL = yves saint laurent
+10 Glossier
+10 Milani
+10 Rimmel
+10 Wet n Wild
+10 NARS
+10 Huda Beauty = huda
+10 Kylie Cosmetics = kylie
+10 Tarte
+10 Bobbi Brown
+10 Pat McGrath
+10 Laura Mercier
+10 Smashbox
+10 Morphe
+10 Anastasia = abh
+10 ColourPop = colourpop
 30 Avon
 30 Mary Kay
 30 Max Factor
@@ -1579,15 +1579,15 @@ I Grills | 🔥
 10 Pit Boss
 10 Kamado Joe
 10 Nexgrill
-30 Napoleon
-30 Oklahoma Joe's = oklahoma joes
-30 Camp Chef
-30 Coleman
-30 Broil King
-30 Dyna-Glo = dyna glo
-30 Solo Stove
-30 Masterbuilt
-30 Ninja = ninja woodfire
+10 Napoleon
+10 Oklahoma Joe's = oklahoma joes
+10 Camp Chef
+10 Coleman
+10 Broil King
+10 Dyna-Glo = dyna glo
+10 Solo Stove
+10 Masterbuilt
+10 Ninja = ninja woodfire
 30 Recteq = rec tec
 30 Green Mountain
 30 Cuisinart
@@ -1607,7 +1607,7 @@ I Grills | 🔥
 B Michelin | known for: tires
 V rubber, car stuff, auto parts, products
 10 Tires = tyres, tire, car tires
-30 Bike Tires = bicycle tires
+10 Bike Tires = bicycle tires
 30 Restaurant Guide = michelin guide, guidebook, guides, michelin stars, stars, restaurant reviews
 30 Tire Gauges = tire pressure gauge
 30 Air Compressors = air compressor
@@ -1624,10 +1624,10 @@ I Sewing Machines | 🧵
 10 Brother
 10 Janome
 10 Bernina
-30 Juki
-30 Pfaff
-30 Husqvarna Viking = husqvarna, viking
-30 Babylock = baby lock
+10 Juki
+10 Pfaff
+10 Husqvarna Viking = husqvarna, viking
+10 Babylock = baby lock
 30 Elna
 30 Kenmore
 30 Necchi
@@ -1644,10 +1644,10 @@ X apple, macbook, macbooks, dell, hp, hewlett packard, lenovo, thinkpad, alienwa
 10 Acer
 10 Microsoft = surface
 10 Samsung = galaxy book
-30 Razer
-30 MSI
-30 LG = gram
-30 Google = chromebook, pixelbook
+10 Razer
+10 MSI
+10 LG = gram
+10 Google = chromebook, pixelbook
 30 Toshiba (disc)
 30 Sony (disc) = vaio
 30 Framework
@@ -1684,16 +1684,16 @@ I Pasta | 🍝
 10 Mueller's = muellers
 10 Kraft = kraft mac and cheese
 10 Banza
-30 Rao's = raos
-30 Creamette
-30 San Giorgio
-30 Garofalo
-30 Rummo
-30 Colavita
-30 Buitoni
-30 Annie's = annies
-30 Kirkland (store)
-30 Great Value (store)
+10 Rao's = raos
+10 Creamette
+10 San Giorgio
+10 Garofalo
+10 Rummo
+10 Colavita
+10 Buitoni
+10 Annie's = annies
+10 Kirkland (store)
+10 Great Value (store)
 30 DeLallo
 30 American Beauty
 30 Skinner
@@ -1718,7 +1718,7 @@ V electronics, audio, sound, devices
 10 Headphones = quietcomfort, noise cancelling headphones
 10 Earbuds = earbud
 10 Soundbars = soundbar
-30 Home Theater = home theater system, surround sound
+10 Home Theater = home theater system, surround sound
 30 Car Audio = car stereo, car speakers
 30 Concert Speakers = pro audio, pa system, pa speakers
 30 Radios = radio, wave radio, clock radio
@@ -1736,13 +1736,13 @@ I Socks | 🧦
 10 Gold Toe = goldtoe
 10 Stance
 10 Under Armour = under armor
-30 Smartwool
-30 Fruit of the Loom
-30 Champion
-30 Puma
-30 Happy Socks
-30 Feetures
-30 Balega
+10 Smartwool
+10 Fruit of the Loom
+10 Champion
+10 Puma
+10 Happy Socks
+10 Feetures
+10 Balega
 30 Thorlo = thorlos
 30 Wigwam
 30 Pair of Thieves
@@ -1769,13 +1769,13 @@ I Refrigerators | 🧊
 10 Kenmore
 10 Maytag
 10 KitchenAid
-30 Bosch
-30 Sub-Zero = subzero
-30 Haier
-30 Hisense
-30 Smeg
-30 Viking
-30 Café = cafe
+10 Bosch
+10 Sub-Zero = subzero
+10 Haier
+10 Hisense
+10 Smeg
+10 Viking
+10 Café = cafe
 30 Thermador
 30 Miele
 30 Liebherr
@@ -1798,8 +1798,8 @@ B Virgin | known for: airlines & records
 V companies, businesses, stuff, things
 10 Airlines = airline, flights, virgin atlantic, virgin america, virgin australia
 10 Records = music, record label, albums, virgin records
-30 Phone Service = virgin mobile, mobile, cell phones, phones
-30 Space Flights = virgin galactic, space travel, spaceships, rockets, space
+10 Phone Service = virgin mobile, mobile, cell phones, phones
+10 Space Flights = virgin galactic, space travel, spaceships, rockets, space
 30 Trains = train, virgin trains
 30 Cruises = cruise, cruise ships, virgin voyages
 30 Hotels = hotel, virgin hotels
@@ -1821,14 +1821,14 @@ I Record Players | 💿
 10 Victrola
 10 Technics
 10 Pro-Ject = project
-30 Rega
-30 Fluance
-30 Sony
-30 Denon
-30 U-Turn = u turn
-30 Music Hall
-30 House of Marley = marley
-30 1 by One = one by one
+10 Rega
+10 Fluance
+10 Sony
+10 Denon
+10 U-Turn = u turn
+10 Music Hall
+10 House of Marley = marley
+10 1 by One = one by one
 30 Pyle
 30 Teac
 30 Marantz
@@ -1848,7 +1848,7 @@ B Toyota | known for: cars | that isn't a car
 V vehicles, vehicle, transportation, machines
 X car, cars, suv, suvs, sedan, prius, camry, corolla, rav4, highlander, lexus, minivan, sienna, 4runner, supra, land cruiser
 10 Trucks = truck, pickup, tacoma, tundra, pickup truck
-30 Car Parts = parts
+10 Car Parts = parts
 30 Forklifts = forklift
 30 Engines = engine
 30 Buses = bus, coaster
@@ -1873,14 +1873,14 @@ I Tea | 🍵
 10 Tetley
 10 Pure Leaf
 10 Snapple
-30 PG Tips
-30 Yorkshire = yorkshire tea
-30 Harney & Sons = harney and sons
-30 Stash
-30 Gold Peak
-30 Republic of Tea
-30 Luzianne
-30 Traditional Medicinals
+10 PG Tips
+10 Yorkshire = yorkshire tea
+10 Harney & Sons = harney and sons
+10 Stash
+10 Gold Peak
+10 Republic of Tea
+10 Luzianne
+10 Traditional Medicinals
 30 Teavana (disc)
 30 Honest Tea (disc)
 30 Typhoo
@@ -1903,7 +1903,7 @@ B Mitsubishi | known for: cars & electronics
 V machines, electronics, vehicles, stuff, products
 10 Cars = car, outlander, eclipse, lancer, mirage, pajero, montero, suv
 10 Air Conditioners = ac, mini split, mini splits, air conditioner
-30 TVs (disc) = tv, television
+10 TVs (disc) = tv, television
 30 Elevators = elevator, escalators, escalator
 30 Trucks = truck, fuso
 30 Forklifts = forklift
@@ -1928,11 +1928,11 @@ I Razors | 🪒
 10 Billie
 10 Braun
 10 Philips Norelco = norelco, philips
-30 Panasonic
-30 Remington
-30 Merkur
-30 Edwin Jagger
-30 Henson
+10 Panasonic
+10 Remington
+10 Merkur
+10 Edwin Jagger
+10 Henson
 30 Leaf = leaf shave
 30 Feather
 30 Personna
@@ -1956,11 +1956,11 @@ I Lawn Mowers | 🌱
 10 Craftsman
 10 Honda
 10 Husqvarna
-30 Troy-Bilt = troy bilt, troybilt
-30 Cub Cadet
-30 Ryobi
-30 Greenworks
-30 EGO = ego power
+10 Troy-Bilt = troy bilt, troybilt
+10 Cub Cadet
+10 Ryobi
+10 Greenworks
+10 EGO = ego power
 30 Snapper
 30 Briggs & Stratton = briggs, briggs and stratton
 30 Black+Decker = black and decker
@@ -1996,10 +1996,10 @@ I Lawn Mowers | 🌱
 B Heinz | known for: ketchup
 V food, condiments, sauces, sauce
 10 Ketchup = tomato ketchup, catsup
-30 Mustard = yellow mustard
-30 Baked Beans = beans
-30 Relish = pickle relish
-30 Pickles = pickle
+10 Mustard = yellow mustard
+10 Baked Beans = beans
+10 Relish = pickle relish
+10 Pickles = pickle
 30 Mayo = mayonnaise
 30 BBQ Sauce = barbecue sauce
 30 Gravy
@@ -2018,15 +2018,15 @@ I Snowboards | 🏂
 10 Burton
 10 Ride
 10 K2
-30 Lib Tech = libtech
-30 Never Summer
-30 Jones
-30 GNU
-30 Salomon
-30 Arbor
-30 Capita
-30 Rossignol
-30 Nitro
+10 Lib Tech = libtech
+10 Never Summer
+10 Jones
+10 GNU
+10 Salomon
+10 Arbor
+10 Capita
+10 Rossignol
+10 Nitro
 30 Yes
 30 DC
 30 Rome
@@ -2049,12 +2049,12 @@ X red bull, redbull, monster, monster energy
 10 Celsius
 10 Bang
 10 5-hour Energy = 5 hour energy, five hour energy
-30 Reign
-30 C4
-30 Prime
-30 Ghost
-30 NOS
-30 Mountain Dew = kickstart, game fuel
+10 Reign
+10 C4
+10 Prime
+10 Ghost
+10 NOS
+10 Mountain Dew = kickstart, game fuel
 30 Full Throttle
 30 Alani Nu = alani
 30 Amp
@@ -2085,12 +2085,12 @@ I Hot Dogs | 🌭
 10 Nathan's = nathans
 10 Hillshire Farm = hillshire
 10 Bar-S = bar s
-30 Kayem
-30 Sabrett
-30 Vienna Beef = vienna
-30 Boar's Head = boars head
-30 Applegate
-30 Kirkland (store)
+10 Kayem
+10 Sabrett
+10 Vienna Beef = vienna
+10 Boar's Head = boars head
+10 Applegate
+10 Kirkland (store)
 30 Hofmann
 30 Dietz & Watson = dietz and watson
 30 Zweigle's = zweigles
@@ -2109,7 +2109,7 @@ I Hot Dogs | 🌭
 B Goodyear | known for: tires
 V rubber, car stuff, auto parts, products
 10 Tires = tyres, tire, car tires
-30 Auto Service = oil change, car repair, auto shop, car service
+10 Auto Service = oil change, car repair, auto shop, car service
 30 Race Tires = nascar tires
 30 Bike Tires = bicycle tires
 30 Blimps = blimp, airship, the blimp
@@ -2130,20 +2130,20 @@ I Jackets | 🧥
 10 Carhartt
 10 L.L.Bean = llbean
 10 Moncler
-30 Marmot
-30 Eddie Bauer
-30 REI
-30 Levi's = levis
-30 Uniqlo
-30 Zara
-30 Nike
-30 Mountain Hardwear
-30 Helly Hansen
-30 Barbour
-30 Burberry
-30 Fjällräven = fjallraven
-30 Cotopaxi
-30 H&M = h and m
+10 Marmot
+10 Eddie Bauer
+10 REI
+10 Levi's = levis
+10 Uniqlo
+10 Zara
+10 Nike
+10 Mountain Hardwear
+10 Helly Hansen
+10 Barbour
+10 Burberry
+10 Fjällräven = fjallraven
+10 Cotopaxi
+10 H&M = h and m
 30 Alpha Industries
 30 Schott = schott nyc, perfecto
 30 Spyder
@@ -2168,10 +2168,10 @@ I Printers | 🖨️
 10 Brother
 10 Lexmark
 10 Xerox
-30 Kodak
-30 Dell
-30 Ricoh
-30 Kyocera
+10 Kodak
+10 Dell
+10 Ricoh
+10 Kyocera
 30 Sharp
 30 Konica Minolta = konica
 30 Samsung (disc)
@@ -2197,9 +2197,9 @@ I Printers | 🖨️
 B Swiss Army | known for: pocket knives
 V gear, stuff, tools, accessories
 10 Pocket Knives = knife, knives, swiss army knife, multitool, multi tool
-30 Watches = watch
-30 Luggage = suitcase, suitcases, backpacks, backpack, bags
-30 Kitchen Knives = chef knife, cutlery, steak knives
+10 Watches = watch
+10 Luggage = suitcase, suitcases, backpacks, backpack, bags
+10 Kitchen Knives = chef knife, cutlery, steak knives
 30 Scissors
 30 Clothing = clothes, jackets
 30 Peelers = peeler
@@ -2217,11 +2217,11 @@ I Toilets | 🚽
 10 Toto = washlet
 10 Glacier Bay
 10 Gerber
-30 Mansfield
-30 Eljer
-30 Briggs
-30 Crane
-30 Duravit
+10 Mansfield
+10 Eljer
+10 Briggs
+10 Crane
+10 Duravit
 30 Saniflo
 30 Woodbridge
 30 Swiss Madison
@@ -2239,8 +2239,8 @@ B Ferrari | known for: sports cars | that isn't a car
 V stuff, things, merch, products
 X car, cars, supercar, supercars, sports car, sports cars, f1 car, race car, race cars, sf90, testarossa, enzo, purosangue, suv, laferrari, 488
 10 Clothing (lic) = clothes, jackets, hats, shirts, hoodies
-30 Toy Cars = toys, toy, die cast, diecast, hot wheels, model cars, lego ferrari
-30 Sneakers (lic) = shoes, puma ferrari, puma
+10 Toy Cars = toys, toy, die cast, diecast, hot wheels, model cars, lego ferrari
+10 Sneakers (lic) = shoes, puma ferrari, puma
 30 Watches = watch
 30 Sunglasses = ray ban ferrari, eyewear
 30 Video Games = video game
@@ -2260,11 +2260,11 @@ I Popcorn | 🍿
 10 Smartfood
 10 Boom Chicka Pop = angies
 10 Cracker Jack
-30 Newman's Own = newmans own
-30 Kirkland (store)
-30 Lesser Evil = lesserevil
-30 Garrett = garrett popcorn
-30 Popcornopolis
+10 Newman's Own = newmans own
+10 Kirkland (store)
+10 Lesser Evil = lesserevil
+10 Garrett = garrett popcorn
+10 Popcornopolis
 30 Pipcorn
 30 Quinn
 30 Weaver
@@ -2281,7 +2281,7 @@ B Epson | known for: printers
 V electronics, office stuff, devices, tech
 10 Printers = printer, ink, ink cartridges, ecotank
 10 Projectors = projector
-30 Scanners = scanner
+10 Scanners = scanner
 30 Receipt Printers = pos printers, receipt printer
 30 Label Makers = label maker, labelworks
 60 Industrial Robots = robots, robot
@@ -2298,12 +2298,12 @@ I Sunscreen | ☀️
 10 Hawaiian Tropic
 10 Supergoop
 10 La Roche-Posay = la roche posay
-30 Aveeno
-30 CeraVe
-30 Sun Bum
-30 Blue Lizard
-30 EltaMD = elta md
-30 Australian Gold
+10 Aveeno
+10 CeraVe
+10 Sun Bum
+10 Blue Lizard
+10 EltaMD = elta md
+10 Australian Gold
 30 Bare Republic
 30 Thinkbaby
 30 Cetaphil
@@ -2334,16 +2334,16 @@ I Speakers | 🔊
 10 Beats
 10 Ultimate Ears = ue
 10 Bang & Olufsen = bang and olufsen, b&o
-30 Marshall
-30 Klipsch
-30 Polk
-30 Yamaha
-30 Harman Kardon
-30 Bowers & Wilkins = bowers and wilkins, b&w
-30 KEF
-30 Anker = soundcore
-30 Google = nest
-30 Apple = homepod
+10 Marshall
+10 Klipsch
+10 Polk
+10 Yamaha
+10 Harman Kardon
+10 Bowers & Wilkins = bowers and wilkins, b&w
+10 KEF
+10 Anker = soundcore
+10 Google = nest
+10 Apple = homepod
 30 Tribit
 30 Skullcandy
 30 Altec Lansing
@@ -2385,11 +2385,11 @@ I Cat Litter | 🐈
 10 Scoop Away
 10 World's Best = worlds best cat litter
 10 Dr. Elsey's = dr elseys
-30 Kirkland (store)
-30 Great Value (store)
-30 Purina
-30 Boxiecat
-30 Feline Pine
+10 Kirkland (store)
+10 Great Value (store)
+10 Purina
+10 Boxiecat
+10 Feline Pine
 30 Okocat
 30 Naturally Fresh
 30 sWheat Scoop = swheat scoop
@@ -2410,8 +2410,8 @@ X starbucks, dunkin, dunkin donuts
 10 Peet's = peets
 10 Caribou = caribou coffee
 10 McDonald's = mcdonalds, mccafe
-30 Costa = costa coffee
-30 The Coffee Bean & Tea Leaf = coffee bean
+10 Costa = costa coffee
+10 The Coffee Bean & Tea Leaf = coffee bean
 30 Biggby
 30 Scooter's = scooters
 30 Blue Bottle
