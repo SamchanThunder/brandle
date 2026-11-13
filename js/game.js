@@ -126,6 +126,8 @@
     document.body.classList.remove('on-results');
     show($('#hud'), true); show($('#round-screen'), true);
     show($('#reveal'), false);
+    // keep the sign + input hidden till showRound fills them in, no placeholder flash
+    show($('#sign-wrap'), false); show($('#answer-bar'), false);
     scene.setDepth(play.total);
     scene.setMode('game');
     setScore(play.total);
