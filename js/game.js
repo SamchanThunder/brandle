@@ -322,10 +322,18 @@
 
   // results
   // the log isn't linear: rare answers sink way down, only a vault answer hits the bottom strip
-  const LOG_LEFT = 24, LOG_CW = 32, LOG_TOP = 14, LOG_H = 100, VAULT_H = 12;
+  const LOG_LEFT = 24, LOG_CW = 32, LOG_TOP = 14, LOG_H = 100, VAULT_H = 8;
+  // each tier gets a band, and every band is a bit thinner than the one above it
+  const LOG_TIERS = [[0, 26, '#4a3d6e'], [10, 22, '#3d3262'], [20, 18, '#322855'], [40, 14, '#271f47'], [60, 11, '#1d1739'], [80, 9, '#14102b']];
   function logDepth(pts) {
-    if (pts >= 100) return LOG_H + VAULT_H / 2 + 2;
-    return LOG_H * Math.log(1 + pts / 10) / Math.log(1 + 95 / 10);
+    if (pts >= 100) return LOG_H + VAULT_H / 2 + 1;
+    let y = 0;
+    for (let k = 0; k < LOG_TIERS.length; k++) {
+      const [lo, h] = LOG_TIERS[k], hi = k + 1 < LOG_TIERS.length ? LOG_TIERS[k + 1][0] : 100;
+      if (pts < hi) return y + h * (pts - lo) / (hi - lo);
+      y += h;
+    }
+    return y;
   }
   function drawLog(canvas, puzzle, play, progress) {
     const cols = 7, cw = LOG_CW, left = LOG_LEFT, top = LOG_TOP, Wd = left + cols * cw, Hd = top + LOG_H + VAULT_H + 4;
@@ -336,13 +344,10 @@
     for (let y = 0; y < top; y++) R(0, y, Wd, 1, `rgb(${Math.round(36 + y * 12)},${Math.round(18 + y * 3)},${Math.round(74 - y)})`);
     R(0, top - 1, Wd, 1, '#8a80a8');
     // tier bands, squished so the rare ones take up most of the shaft
-    const bands = [[0, 10, '#2a2140'], [10, 20, '#3b2f57'], [20, 40, '#2f3a5c'], [40, 60, '#4a2236'], [60, 80, '#173b38'], [80, 100, '#3a2a1a']];
-    bands.forEach(([a, b, col]) => {
-      const y0 = top + logDepth(a), y1 = top + (b >= 100 ? LOG_H : logDepth(b));
-      R(0, y0, Wd, y1 - y0, col); R(0, y1 - 1, Wd, 1, 'rgba(0,0,0,0.35)');
-    });
+    let yy = top;
+    LOG_TIERS.forEach(([, h, col]) => { R(0, yy, Wd, h, col); R(0, yy + h - 1, Wd, 1, 'rgba(0,0,0,0.4)'); yy += h; });
     // the vault strip
-    R(0, top + LOG_H, Wd, VAULT_H + 4, '#3a2c06');
+    R(0, top + LOG_H, Wd, VAULT_H + 4, '#2e2205');
     R(0, top + LOG_H, Wd, 1, '#ffd23f');
     // labels
     const FONT = {
